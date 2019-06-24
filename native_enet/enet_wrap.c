@@ -220,7 +220,7 @@ static void SWIGUNUSED SWIG_JavaThrowException(JNIEnv *jenv, SWIG_JavaExceptionC
 extern "C" {
 #endif
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1NULL_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1NULL_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -232,7 +232,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1NULL_1get(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetBuffer_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetBuffer_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   ENetBuffer *arg1 = (ENetBuffer *) 0 ;
   void *arg2 = (void *) 0 ;
   
@@ -245,7 +245,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetBuffer_1data_1set(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetBuffer_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetBuffer_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   ENetBuffer *arg1 = (ENetBuffer *) 0 ;
   void *result = 0 ;
@@ -260,7 +260,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetBuffer_1data_1get(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetBuffer_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetBuffer_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   ENetBuffer *arg1 = (ENetBuffer *) 0 ;
   size_t arg2 ;
   
@@ -273,7 +273,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetBuffer_1dataLength_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetBuffer_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetBuffer_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   ENetBuffer *arg1 = (ENetBuffer *) 0 ;
   size_t result;
@@ -288,7 +288,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetBuffer_1dataLength_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetBuffer(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetBuffer(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   ENetBuffer *result = 0 ;
   
@@ -300,7 +300,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetBuffer(JNIEnv *jenv, jclass 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetBuffer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetBuffer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   ENetBuffer *arg1 = (ENetBuffer *) 0 ;
   
   (void)jenv;
@@ -310,7 +310,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetBuffer(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MINIMUM_1MTU_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1MINIMUM_1MTU_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -322,7 +322,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MINIMUM_1MTU_1get(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1MTU_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1MTU_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -334,7 +334,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1MTU_1get(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1PACKET_1COMMANDS_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1PACKET_1COMMANDS_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -346,7 +346,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1PACKET_1COMMA
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MINIMUM_1WINDOW_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1MINIMUM_1WINDOW_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -358,7 +358,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MINIMUM_1WINDOW_1SIZE_
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1WINDOW_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1WINDOW_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -370,7 +370,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1WINDOW_1SIZE_
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MINIMUM_1CHANNEL_1COUNT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1MINIMUM_1CHANNEL_1COUNT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -382,7 +382,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MINIMUM_1CHANNEL_1COUN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1CHANNEL_1COUNT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1CHANNEL_1COUNT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -394,7 +394,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1CHANNEL_1COUN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1PEER_1ID_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1PEER_1ID_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -406,7 +406,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1PEER_1ID_1get
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1FRAGMENT_1COUNT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1FRAGMENT_1COUNT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -418,7 +418,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1MAXIMUM_1FRAGMENT_1COU
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1NONE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1NONE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -430,7 +430,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1NONE_1get(JNI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1ACKNOWLEDGE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1ACKNOWLEDGE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -442,7 +442,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1ACKNOWLEDGE_1
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1CONNECT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1CONNECT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -454,7 +454,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1CONNECT_1get(
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1VERIFY_1CONNECT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1VERIFY_1CONNECT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -466,7 +466,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1VERIFY_1CONNE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1DISCONNECT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1DISCONNECT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -478,7 +478,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1DISCONNECT_1g
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1PING_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1PING_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -490,7 +490,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1PING_1get(JNI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1RELIABLE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1RELIABLE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -502,7 +502,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1RELIABL
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1UNRELIABLE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1UNRELIABLE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -514,7 +514,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1UNRELIA
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1FRAGMENT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1FRAGMENT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -526,7 +526,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1FRAGMEN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1UNSEQUENCED_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1UNSEQUENCED_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -538,7 +538,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1UNSEQUE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1BANDWIDTH_1LIMIT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1BANDWIDTH_1LIMIT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -550,7 +550,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1BANDWIDTH_1LI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1THROTTLE_1CONFIGURE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1THROTTLE_1CONFIGURE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -562,7 +562,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1THROTTLE_1CON
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1UNRELIABLE_1FRAGMENT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1UNRELIABLE_1FRAGMENT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -574,7 +574,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1SEND_1UNRELIA
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1COUNT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1COUNT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -586,7 +586,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1COUNT_1get(JN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1MASK_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1MASK_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolCommand result;
   
@@ -598,7 +598,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1MASK_1get(JNI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1FLAG_1ACKNOWLEDGE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1FLAG_1ACKNOWLEDGE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolFlag result;
   
@@ -610,7 +610,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1FLAG_1ACKNOWL
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1FLAG_1UNSEQUENCED_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1COMMAND_1FLAG_1UNSEQUENCED_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolFlag result;
   
@@ -622,7 +622,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1COMMAND_1FLAG_1UNSEQUE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1FLAG_1COMPRESSED_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1HEADER_1FLAG_1COMPRESSED_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolFlag result;
   
@@ -634,7 +634,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1FLAG_1COMPRESS
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1FLAG_1SENT_1TIME_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1HEADER_1FLAG_1SENT_1TIME_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolFlag result;
   
@@ -646,7 +646,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1FLAG_1SENT_1TI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1FLAG_1MASK_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1HEADER_1FLAG_1MASK_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolFlag result;
   
@@ -658,7 +658,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1FLAG_1MASK_1ge
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1SESSION_1MASK_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1HEADER_1SESSION_1MASK_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolFlag result;
   
@@ -670,7 +670,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1SESSION_1MASK_
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1SESSION_1SHIFT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PROTOCOL_1HEADER_1SESSION_1SHIFT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetProtocolFlag result;
   
@@ -682,7 +682,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PROTOCOL_1HEADER_1SESSION_1SHIFT
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolHeader_1peerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolHeader_1peerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolHeader *arg1 = (struct _ENetProtocolHeader *) 0 ;
   enet_uint16 arg2 ;
   
@@ -695,7 +695,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolHeader_1peerID_1set(JNIEnv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolHeader_1peerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolHeader_1peerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolHeader *arg1 = (struct _ENetProtocolHeader *) 0 ;
   enet_uint16 result;
@@ -710,7 +710,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolHeader_1peerID_1get(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolHeader_1sentTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolHeader_1sentTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolHeader *arg1 = (struct _ENetProtocolHeader *) 0 ;
   enet_uint16 arg2 ;
   
@@ -723,7 +723,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolHeader_1sentTime_1set(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolHeader_1sentTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolHeader_1sentTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolHeader *arg1 = (struct _ENetProtocolHeader *) 0 ;
   enet_uint16 result;
@@ -738,7 +738,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolHeader_1sentTime_1get(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolHeader(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolHeader(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolHeader *result = 0 ;
   
@@ -750,7 +750,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolHeader(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolHeader(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolHeader(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolHeader *arg1 = (struct _ENetProtocolHeader *) 0 ;
   
   (void)jenv;
@@ -760,7 +760,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolHeader(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1command_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolCommandHeader_1command_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
   struct _ENetProtocolCommandHeader *arg1 = (struct _ENetProtocolCommandHeader *) 0 ;
   enet_uint8 arg2 ;
   
@@ -773,7 +773,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1command_1se
 }
 
 
-SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1command_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jshort JNICALL Java_ENetJava_enetJNI_ENetProtocolCommandHeader_1command_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jshort jresult = 0 ;
   struct _ENetProtocolCommandHeader *arg1 = (struct _ENetProtocolCommandHeader *) 0 ;
   enet_uint8 result;
@@ -788,7 +788,7 @@ SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1command_1
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1channelID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolCommandHeader_1channelID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
   struct _ENetProtocolCommandHeader *arg1 = (struct _ENetProtocolCommandHeader *) 0 ;
   enet_uint8 arg2 ;
   
@@ -801,7 +801,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1channelID_1
 }
 
 
-SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1channelID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jshort JNICALL Java_ENetJava_enetJNI_ENetProtocolCommandHeader_1channelID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jshort jresult = 0 ;
   struct _ENetProtocolCommandHeader *arg1 = (struct _ENetProtocolCommandHeader *) 0 ;
   enet_uint8 result;
@@ -816,7 +816,7 @@ SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1channelID
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1reliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolCommandHeader_1reliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolCommandHeader *arg1 = (struct _ENetProtocolCommandHeader *) 0 ;
   enet_uint16 arg2 ;
   
@@ -829,7 +829,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1reliableSeq
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1reliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolCommandHeader_1reliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolCommandHeader *arg1 = (struct _ENetProtocolCommandHeader *) 0 ;
   enet_uint16 result;
@@ -844,7 +844,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolCommandHeader_1reliableSeq
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolCommandHeader(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolCommandHeader(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolCommandHeader *result = 0 ;
   
@@ -856,7 +856,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolCommandHeader(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolCommandHeader(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolCommandHeader(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolCommandHeader *arg1 = (struct _ENetProtocolCommandHeader *) 0 ;
   
   (void)jenv;
@@ -866,7 +866,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolCommandHeader(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolAcknowledge_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolAcknowledge *arg1 = (struct _ENetProtocolAcknowledge *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -880,7 +880,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1header_1set(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolAcknowledge_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolAcknowledge *arg1 = (struct _ENetProtocolAcknowledge *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -895,7 +895,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1header_1get(
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1receivedReliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolAcknowledge_1receivedReliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolAcknowledge *arg1 = (struct _ENetProtocolAcknowledge *) 0 ;
   enet_uint16 arg2 ;
   
@@ -908,7 +908,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1receivedRelia
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1receivedReliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolAcknowledge_1receivedReliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolAcknowledge *arg1 = (struct _ENetProtocolAcknowledge *) 0 ;
   enet_uint16 result;
@@ -923,7 +923,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1receivedRelia
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1receivedSentTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolAcknowledge_1receivedSentTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolAcknowledge *arg1 = (struct _ENetProtocolAcknowledge *) 0 ;
   enet_uint16 arg2 ;
   
@@ -936,7 +936,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1receivedSentT
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1receivedSentTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolAcknowledge_1receivedSentTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolAcknowledge *arg1 = (struct _ENetProtocolAcknowledge *) 0 ;
   enet_uint16 result;
@@ -951,7 +951,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolAcknowledge_1receivedSentT
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolAcknowledge(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolAcknowledge(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolAcknowledge *result = 0 ;
   
@@ -963,7 +963,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolAcknowledge(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolAcknowledge(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolAcknowledge(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolAcknowledge *arg1 = (struct _ENetProtocolAcknowledge *) 0 ;
   
   (void)jenv;
@@ -973,7 +973,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolAcknowledge(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -987,7 +987,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1header_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -1002,7 +1002,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1header_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingPeerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1outgoingPeerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint16 arg2 ;
   
@@ -1015,7 +1015,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingPeerID_1s
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingPeerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1outgoingPeerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint16 result;
@@ -1030,7 +1030,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingPeerID_1g
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1incomingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1incomingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint8 arg2 ;
   
@@ -1043,7 +1043,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1incomingSessionID
 }
 
 
-SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1incomingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jshort JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1incomingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jshort jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint8 result;
@@ -1058,7 +1058,7 @@ SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1incomingSession
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1outgoingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint8 arg2 ;
   
@@ -1071,7 +1071,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingSessionID
 }
 
 
-SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jshort JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1outgoingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jshort jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint8 result;
@@ -1086,7 +1086,7 @@ SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingSession
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1mtu_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1mtu_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1099,7 +1099,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1mtu_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1mtu_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1mtu_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1114,7 +1114,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1mtu_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1windowSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1windowSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1127,7 +1127,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1windowSize_1set(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1windowSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1windowSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1142,7 +1142,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1windowSize_1get(
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1channelCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1channelCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1155,7 +1155,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1channelCount_1set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1channelCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1channelCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1170,7 +1170,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1channelCount_1ge
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1183,7 +1183,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1incomingBandwidth
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1198,7 +1198,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1incomingBandwidt
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1211,7 +1211,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingBandwidth
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1226,7 +1226,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1outgoingBandwidt
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1packetThrottleInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1239,7 +1239,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleInt
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1packetThrottleInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1254,7 +1254,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleIn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleAcceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1packetThrottleAcceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1267,7 +1267,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleAcc
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleAcceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1packetThrottleAcceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1282,7 +1282,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleAc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleDeceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1packetThrottleDeceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1295,7 +1295,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleDec
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleDeceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1packetThrottleDeceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1310,7 +1310,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1packetThrottleDe
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1connectID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1connectID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1323,7 +1323,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1connectID_1set(JN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1connectID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1connectID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1338,7 +1338,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1connectID_1get(J
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1351,7 +1351,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1data_1set(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolConnect_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   enet_uint32 result;
@@ -1366,7 +1366,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolConnect_1data_1get(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolConnect(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolConnect(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolConnect *result = 0 ;
   
@@ -1378,7 +1378,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolConnect(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolConnect(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolConnect(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolConnect *arg1 = (struct _ENetProtocolConnect *) 0 ;
   
   (void)jenv;
@@ -1388,7 +1388,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolConnect(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -1402,7 +1402,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1header_1set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -1417,7 +1417,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1header_1ge
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingPeerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1outgoingPeerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint16 arg2 ;
   
@@ -1430,7 +1430,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingPee
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingPeerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1outgoingPeerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint16 result;
@@ -1445,7 +1445,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingPee
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1incomingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1incomingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint8 arg2 ;
   
@@ -1458,7 +1458,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1incomingSes
 }
 
 
-SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1incomingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jshort JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1incomingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jshort jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint8 result;
@@ -1473,7 +1473,7 @@ SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1incomingS
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1outgoingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint8 arg2 ;
   
@@ -1486,7 +1486,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingSes
 }
 
 
-SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jshort JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1outgoingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jshort jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint8 result;
@@ -1501,7 +1501,7 @@ SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingS
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1mtu_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1mtu_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1514,7 +1514,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1mtu_1set(JN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1mtu_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1mtu_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 result;
@@ -1529,7 +1529,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1mtu_1get(J
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1windowSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1windowSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1542,7 +1542,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1windowSize_
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1windowSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1windowSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 result;
@@ -1557,7 +1557,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1windowSize
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1channelCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1channelCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1570,7 +1570,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1channelCoun
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1channelCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1channelCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 result;
@@ -1585,7 +1585,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1channelCou
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1598,7 +1598,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1incomingBan
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 result;
@@ -1613,7 +1613,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1incomingBa
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1626,7 +1626,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingBan
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 result;
@@ -1641,7 +1641,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1outgoingBa
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThrottleInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1packetThrottleInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1654,7 +1654,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThrot
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThrottleInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1packetThrottleInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 result;
@@ -1669,7 +1669,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThro
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThrottleAcceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1packetThrottleAcceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1682,7 +1682,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThrot
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThrottleAcceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1packetThrottleAcceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 result;
@@ -1697,7 +1697,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThro
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThrottleDeceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1packetThrottleDeceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1710,7 +1710,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThrot
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThrottleDeceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1packetThrottleDeceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 result;
@@ -1725,7 +1725,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1packetThro
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1connectID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1connectID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1738,7 +1738,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1connectID_1
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1connectID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolVerifyConnect_1connectID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   enet_uint32 result;
@@ -1753,7 +1753,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolVerifyConnect_1connectID_
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolVerifyConnect(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolVerifyConnect(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolVerifyConnect *result = 0 ;
   
@@ -1765,7 +1765,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolVerifyConnect(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolVerifyConnect(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolVerifyConnect(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolVerifyConnect *arg1 = (struct _ENetProtocolVerifyConnect *) 0 ;
   
   (void)jenv;
@@ -1775,7 +1775,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolVerifyConnect(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolBandwidthLimit_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolBandwidthLimit *arg1 = (struct _ENetProtocolBandwidthLimit *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -1789,7 +1789,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1header_1se
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolBandwidthLimit_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolBandwidthLimit *arg1 = (struct _ENetProtocolBandwidthLimit *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -1804,7 +1804,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1header_1g
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolBandwidthLimit_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolBandwidthLimit *arg1 = (struct _ENetProtocolBandwidthLimit *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1817,7 +1817,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1incomingBa
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolBandwidthLimit_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolBandwidthLimit *arg1 = (struct _ENetProtocolBandwidthLimit *) 0 ;
   enet_uint32 result;
@@ -1832,7 +1832,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1incomingB
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolBandwidthLimit_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolBandwidthLimit *arg1 = (struct _ENetProtocolBandwidthLimit *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1845,7 +1845,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1outgoingBa
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolBandwidthLimit_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolBandwidthLimit *arg1 = (struct _ENetProtocolBandwidthLimit *) 0 ;
   enet_uint32 result;
@@ -1860,7 +1860,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolBandwidthLimit_1outgoingB
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolBandwidthLimit(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolBandwidthLimit(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolBandwidthLimit *result = 0 ;
   
@@ -1872,7 +1872,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolBandwidthLimit(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolBandwidthLimit(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolBandwidthLimit(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolBandwidthLimit *arg1 = (struct _ENetProtocolBandwidthLimit *) 0 ;
   
   (void)jenv;
@@ -1882,7 +1882,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolBandwidthLimit(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolThrottleConfigure_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolThrottleConfigure *arg1 = (struct _ENetProtocolThrottleConfigure *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -1896,7 +1896,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1header_
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolThrottleConfigure_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolThrottleConfigure *arg1 = (struct _ENetProtocolThrottleConfigure *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -1911,7 +1911,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1header
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolThrottleConfigure *arg1 = (struct _ENetProtocolThrottleConfigure *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1924,7 +1924,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packetT
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolThrottleConfigure *arg1 = (struct _ENetProtocolThrottleConfigure *) 0 ;
   enet_uint32 result;
@@ -1939,7 +1939,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packet
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleAcceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleAcceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolThrottleConfigure *arg1 = (struct _ENetProtocolThrottleConfigure *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1952,7 +1952,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packetT
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleAcceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleAcceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolThrottleConfigure *arg1 = (struct _ENetProtocolThrottleConfigure *) 0 ;
   enet_uint32 result;
@@ -1967,7 +1967,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packet
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleDeceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleDeceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolThrottleConfigure *arg1 = (struct _ENetProtocolThrottleConfigure *) 0 ;
   enet_uint32 arg2 ;
   
@@ -1980,7 +1980,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packetT
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleDeceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolThrottleConfigure_1packetThrottleDeceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolThrottleConfigure *arg1 = (struct _ENetProtocolThrottleConfigure *) 0 ;
   enet_uint32 result;
@@ -1995,7 +1995,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolThrottleConfigure_1packet
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolThrottleConfigure(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolThrottleConfigure(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolThrottleConfigure *result = 0 ;
   
@@ -2007,7 +2007,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolThrottleConfigure(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolThrottleConfigure(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolThrottleConfigure(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolThrottleConfigure *arg1 = (struct _ENetProtocolThrottleConfigure *) 0 ;
   
   (void)jenv;
@@ -2017,7 +2017,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolThrottleConfigure(
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolDisconnect_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolDisconnect_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolDisconnect *arg1 = (struct _ENetProtocolDisconnect *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -2031,7 +2031,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolDisconnect_1header_1set(JN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolDisconnect_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolDisconnect_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolDisconnect *arg1 = (struct _ENetProtocolDisconnect *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -2046,7 +2046,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolDisconnect_1header_1get(J
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolDisconnect_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolDisconnect_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolDisconnect *arg1 = (struct _ENetProtocolDisconnect *) 0 ;
   enet_uint32 arg2 ;
   
@@ -2059,7 +2059,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolDisconnect_1data_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolDisconnect_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolDisconnect_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolDisconnect *arg1 = (struct _ENetProtocolDisconnect *) 0 ;
   enet_uint32 result;
@@ -2074,7 +2074,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolDisconnect_1data_1get(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolDisconnect(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolDisconnect(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolDisconnect *result = 0 ;
   
@@ -2086,7 +2086,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolDisconnect(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolDisconnect(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolDisconnect(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolDisconnect *arg1 = (struct _ENetProtocolDisconnect *) 0 ;
   
   (void)jenv;
@@ -2096,7 +2096,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolDisconnect(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolPing_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolPing_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolPing *arg1 = (struct _ENetProtocolPing *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -2110,7 +2110,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolPing_1header_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolPing_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolPing_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolPing *arg1 = (struct _ENetProtocolPing *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -2125,7 +2125,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolPing_1header_1get(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolPing(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolPing(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolPing *result = 0 ;
   
@@ -2137,7 +2137,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolPing(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolPing(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolPing(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolPing *arg1 = (struct _ENetProtocolPing *) 0 ;
   
   (void)jenv;
@@ -2147,7 +2147,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolPing(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendReliable_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendReliable_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolSendReliable *arg1 = (struct _ENetProtocolSendReliable *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -2161,7 +2161,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendReliable_1header_1set(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendReliable_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolSendReliable_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendReliable *arg1 = (struct _ENetProtocolSendReliable *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -2176,7 +2176,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendReliable_1header_1get
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendReliable_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendReliable_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolSendReliable *arg1 = (struct _ENetProtocolSendReliable *) 0 ;
   enet_uint16 arg2 ;
   
@@ -2189,7 +2189,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendReliable_1dataLength_1
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendReliable_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolSendReliable_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolSendReliable *arg1 = (struct _ENetProtocolSendReliable *) 0 ;
   enet_uint16 result;
@@ -2204,7 +2204,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendReliable_1dataLength_1
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolSendReliable(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolSendReliable(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendReliable *result = 0 ;
   
@@ -2216,7 +2216,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolSendReliable(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolSendReliable(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolSendReliable(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolSendReliable *arg1 = (struct _ENetProtocolSendReliable *) 0 ;
   
   (void)jenv;
@@ -2226,7 +2226,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolSendReliable(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnreliable_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolSendUnreliable *arg1 = (struct _ENetProtocolSendUnreliable *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -2240,7 +2240,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1header_1se
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnreliable_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendUnreliable *arg1 = (struct _ENetProtocolSendUnreliable *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -2255,7 +2255,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1header_1g
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1unreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnreliable_1unreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolSendUnreliable *arg1 = (struct _ENetProtocolSendUnreliable *) 0 ;
   enet_uint16 arg2 ;
   
@@ -2268,7 +2268,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1unreliable
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1unreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnreliable_1unreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolSendUnreliable *arg1 = (struct _ENetProtocolSendUnreliable *) 0 ;
   enet_uint16 result;
@@ -2283,7 +2283,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1unreliable
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnreliable_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolSendUnreliable *arg1 = (struct _ENetProtocolSendUnreliable *) 0 ;
   enet_uint16 arg2 ;
   
@@ -2296,7 +2296,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1dataLength
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnreliable_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolSendUnreliable *arg1 = (struct _ENetProtocolSendUnreliable *) 0 ;
   enet_uint16 result;
@@ -2311,7 +2311,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendUnreliable_1dataLength
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolSendUnreliable(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolSendUnreliable(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendUnreliable *result = 0 ;
   
@@ -2323,7 +2323,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolSendUnreliable(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolSendUnreliable(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolSendUnreliable(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolSendUnreliable *arg1 = (struct _ENetProtocolSendUnreliable *) 0 ;
   
   (void)jenv;
@@ -2333,7 +2333,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolSendUnreliable(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnsequenced_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolSendUnsequenced *arg1 = (struct _ENetProtocolSendUnsequenced *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -2347,7 +2347,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1header_1s
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnsequenced_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendUnsequenced *arg1 = (struct _ENetProtocolSendUnsequenced *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -2362,7 +2362,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1header_1
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1unsequencedGroup_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnsequenced_1unsequencedGroup_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolSendUnsequenced *arg1 = (struct _ENetProtocolSendUnsequenced *) 0 ;
   enet_uint16 arg2 ;
   
@@ -2375,7 +2375,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1unsequenc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1unsequencedGroup_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnsequenced_1unsequencedGroup_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolSendUnsequenced *arg1 = (struct _ENetProtocolSendUnsequenced *) 0 ;
   enet_uint16 result;
@@ -2390,7 +2390,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1unsequenc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnsequenced_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolSendUnsequenced *arg1 = (struct _ENetProtocolSendUnsequenced *) 0 ;
   enet_uint16 arg2 ;
   
@@ -2403,7 +2403,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1dataLengt
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolSendUnsequenced_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolSendUnsequenced *arg1 = (struct _ENetProtocolSendUnsequenced *) 0 ;
   enet_uint16 result;
@@ -2418,7 +2418,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendUnsequenced_1dataLengt
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolSendUnsequenced(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolSendUnsequenced(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendUnsequenced *result = 0 ;
   
@@ -2430,7 +2430,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolSendUnsequenced(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolSendUnsequenced(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolSendUnsequenced(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolSendUnsequenced *arg1 = (struct _ENetProtocolSendUnsequenced *) 0 ;
   
   (void)jenv;
@@ -2440,7 +2440,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolSendUnsequenced(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -2454,7 +2454,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1header_1set(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -2469,7 +2469,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1header_1get
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1startSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1startSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint16 arg2 ;
   
@@ -2482,7 +2482,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1startSequenc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1startSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1startSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint16 result;
@@ -2497,7 +2497,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1startSequenc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint16 arg2 ;
   
@@ -2510,7 +2510,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1dataLength_1
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint16 result;
@@ -2525,7 +2525,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1dataLength_1
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1fragmentCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint32 arg2 ;
   
@@ -2538,7 +2538,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentCoun
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1fragmentCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint32 result;
@@ -2553,7 +2553,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentCou
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1fragmentNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint32 arg2 ;
   
@@ -2566,7 +2566,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentNumb
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1fragmentNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint32 result;
@@ -2581,7 +2581,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentNum
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1totalLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1totalLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint32 arg2 ;
   
@@ -2594,7 +2594,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1totalLength_
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1totalLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1totalLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint32 result;
@@ -2609,7 +2609,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1totalLength
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentOffset_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1fragmentOffset_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint32 arg2 ;
   
@@ -2622,7 +2622,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentOffs
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentOffset_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocolSendFragment_1fragmentOffset_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   enet_uint32 result;
@@ -2637,7 +2637,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocolSendFragment_1fragmentOff
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolSendFragment(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocolSendFragment(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetProtocolSendFragment *result = 0 ;
   
@@ -2649,7 +2649,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocolSendFragment(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolSendFragment(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocolSendFragment(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetProtocolSendFragment *arg1 = (struct _ENetProtocolSendFragment *) 0 ;
   
   (void)jenv;
@@ -2659,7 +2659,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocolSendFragment(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1header_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolCommandHeader *arg2 = (ENetProtocolCommandHeader *) 0 ;
   
@@ -2673,7 +2673,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1header_1set(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1header_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolCommandHeader *result = 0 ;
@@ -2688,7 +2688,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1header_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1acknowledge_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1acknowledge_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolAcknowledge *arg2 = (ENetProtocolAcknowledge *) 0 ;
   
@@ -2702,7 +2702,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1acknowledge_1set(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1acknowledge_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1acknowledge_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolAcknowledge *result = 0 ;
@@ -2717,7 +2717,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1acknowledge_1get(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1connect_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1connect_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolConnect *arg2 = (ENetProtocolConnect *) 0 ;
   
@@ -2731,7 +2731,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1connect_1set(JNIEnv *jen
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1connect_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1connect_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolConnect *result = 0 ;
@@ -2746,7 +2746,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1connect_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1verifyConnect_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1verifyConnect_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolVerifyConnect *arg2 = (ENetProtocolVerifyConnect *) 0 ;
   
@@ -2760,7 +2760,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1verifyConnect_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1verifyConnect_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1verifyConnect_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolVerifyConnect *result = 0 ;
@@ -2775,7 +2775,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1verifyConnect_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1disconnect_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1disconnect_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolDisconnect *arg2 = (ENetProtocolDisconnect *) 0 ;
   
@@ -2789,7 +2789,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1disconnect_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1disconnect_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1disconnect_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolDisconnect *result = 0 ;
@@ -2804,7 +2804,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1disconnect_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1ping_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1ping_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolPing *arg2 = (ENetProtocolPing *) 0 ;
   
@@ -2818,7 +2818,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1ping_1set(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1ping_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1ping_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolPing *result = 0 ;
@@ -2833,7 +2833,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1ping_1get(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1sendReliable_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1sendReliable_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolSendReliable *arg2 = (ENetProtocolSendReliable *) 0 ;
   
@@ -2847,7 +2847,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1sendReliable_1set(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1sendReliable_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1sendReliable_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolSendReliable *result = 0 ;
@@ -2862,7 +2862,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1sendReliable_1get(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1sendUnreliable_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1sendUnreliable_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolSendUnreliable *arg2 = (ENetProtocolSendUnreliable *) 0 ;
   
@@ -2876,7 +2876,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1sendUnreliable_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1sendUnreliable_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1sendUnreliable_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolSendUnreliable *result = 0 ;
@@ -2891,7 +2891,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1sendUnreliable_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1sendUnsequenced_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1sendUnsequenced_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolSendUnsequenced *arg2 = (ENetProtocolSendUnsequenced *) 0 ;
   
@@ -2905,7 +2905,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1sendUnsequenced_1set(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1sendUnsequenced_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1sendUnsequenced_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolSendUnsequenced *result = 0 ;
@@ -2920,7 +2920,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1sendUnsequenced_1get(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1sendFragment_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1sendFragment_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolSendFragment *arg2 = (ENetProtocolSendFragment *) 0 ;
   
@@ -2934,7 +2934,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1sendFragment_1set(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1sendFragment_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1sendFragment_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolSendFragment *result = 0 ;
@@ -2949,7 +2949,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1sendFragment_1get(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1bandwidthLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1bandwidthLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolBandwidthLimit *arg2 = (ENetProtocolBandwidthLimit *) 0 ;
   
@@ -2963,7 +2963,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1bandwidthLimit_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1bandwidthLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1bandwidthLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolBandwidthLimit *result = 0 ;
@@ -2978,7 +2978,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1bandwidthLimit_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1throttleConfigure_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetProtocol_1throttleConfigure_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolThrottleConfigure *arg2 = (ENetProtocolThrottleConfigure *) 0 ;
   
@@ -2992,7 +2992,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetProtocol_1throttleConfigure_1set(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1throttleConfigure_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetProtocol_1throttleConfigure_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   ENetProtocolThrottleConfigure *result = 0 ;
@@ -3007,7 +3007,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetProtocol_1throttleConfigure_1get(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocol(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetProtocol(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   union _ENetProtocol *result = 0 ;
   
@@ -3019,7 +3019,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetProtocol(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocol(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetProtocol(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   union _ENetProtocol *arg1 = (union _ENetProtocol *) 0 ;
   
   (void)jenv;
@@ -3029,7 +3029,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetProtocol(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetListNode_1next_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetListNode_1next_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetListNode *arg1 = (struct _ENetListNode *) 0 ;
   struct _ENetListNode *arg2 = (struct _ENetListNode *) 0 ;
   
@@ -3043,7 +3043,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetListNode_1next_1set(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetListNode_1next_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetListNode_1next_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetListNode *arg1 = (struct _ENetListNode *) 0 ;
   struct _ENetListNode *result = 0 ;
@@ -3058,7 +3058,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetListNode_1next_1get(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetListNode_1previous_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetListNode_1previous_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetListNode *arg1 = (struct _ENetListNode *) 0 ;
   struct _ENetListNode *arg2 = (struct _ENetListNode *) 0 ;
   
@@ -3072,7 +3072,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetListNode_1previous_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetListNode_1previous_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetListNode_1previous_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetListNode *arg1 = (struct _ENetListNode *) 0 ;
   struct _ENetListNode *result = 0 ;
@@ -3087,7 +3087,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetListNode_1previous_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetListNode(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetListNode(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetListNode *result = 0 ;
   
@@ -3099,7 +3099,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetListNode(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetListNode(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetListNode(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetListNode *arg1 = (struct _ENetListNode *) 0 ;
   
   (void)jenv;
@@ -3109,7 +3109,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetListNode(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetList_1sentinel_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetList_1sentinel_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetList *arg1 = (struct _ENetList *) 0 ;
   ENetListNode *arg2 = (ENetListNode *) 0 ;
   
@@ -3123,7 +3123,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetList_1sentinel_1set(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetList_1sentinel_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetList_1sentinel_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetList *arg1 = (struct _ENetList *) 0 ;
   ENetListNode *result = 0 ;
@@ -3138,7 +3138,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetList_1sentinel_1get(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetList(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetList(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetList *result = 0 ;
   
@@ -3150,7 +3150,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetList(JNIEnv *jenv, jclass jc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetList(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetList(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetList *arg1 = (struct _ENetList *) 0 ;
   
   (void)jenv;
@@ -3160,7 +3160,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetList(JNIEnv *jenv, jclass 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1list_1clear(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1list_1clear(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetList *arg1 = (ENetList *) 0 ;
   
   (void)jenv;
@@ -3171,7 +3171,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1list_1clear(JNIEnv *jenv, jclass
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1list_1insert(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1list_1insert(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   ENetListIterator arg1 = (ENetListIterator) 0 ;
   void *arg2 = (void *) 0 ;
@@ -3188,7 +3188,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1list_1insert(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1list_1remove(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1list_1remove(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   ENetListIterator arg1 = (ENetListIterator) 0 ;
   void *result = 0 ;
@@ -3203,7 +3203,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1list_1remove(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1list_1move(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1list_1move(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   ENetListIterator arg1 = (ENetListIterator) 0 ;
   void *arg2 = (void *) 0 ;
@@ -3222,7 +3222,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1list_1move(JNIEnv *jenv, jclass
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1list_1size(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1list_1size(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   ENetList *arg1 = (ENetList *) 0 ;
   size_t result;
@@ -3237,7 +3237,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1list_1size(JNIEnv *jenv, jclass
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCallbacks_1malloc_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetCallbacks_1malloc_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetCallbacks *arg1 = (struct _ENetCallbacks *) 0 ;
   void *(*arg2)(size_t) = (void *(*)(size_t)) 0 ;
   
@@ -3250,7 +3250,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCallbacks_1malloc_1set(JNIEnv *jen
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCallbacks_1malloc_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetCallbacks_1malloc_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetCallbacks *arg1 = (struct _ENetCallbacks *) 0 ;
   void *(*result)(size_t) = 0 ;
@@ -3265,7 +3265,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCallbacks_1malloc_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCallbacks_1free_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetCallbacks_1free_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetCallbacks *arg1 = (struct _ENetCallbacks *) 0 ;
   void (*arg2)(void *) = (void (*)(void *)) 0 ;
   
@@ -3278,7 +3278,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCallbacks_1free_1set(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCallbacks_1free_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetCallbacks_1free_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetCallbacks *arg1 = (struct _ENetCallbacks *) 0 ;
   void (*result)(void *) = 0 ;
@@ -3293,7 +3293,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCallbacks_1free_1get(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCallbacks_1no_1memory_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetCallbacks_1no_1memory_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetCallbacks *arg1 = (struct _ENetCallbacks *) 0 ;
   void (*arg2)(void) = (void (*)(void)) 0 ;
   
@@ -3306,7 +3306,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCallbacks_1no_1memory_1set(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCallbacks_1no_1memory_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetCallbacks_1no_1memory_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetCallbacks *arg1 = (struct _ENetCallbacks *) 0 ;
   void (*result)(void) = 0 ;
@@ -3321,7 +3321,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCallbacks_1no_1memory_1get(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetCallbacks(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetCallbacks(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetCallbacks *result = 0 ;
   
@@ -3333,7 +3333,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetCallbacks(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetCallbacks(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetCallbacks(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetCallbacks *arg1 = (struct _ENetCallbacks *) 0 ;
   
   (void)jenv;
@@ -3343,7 +3343,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetCallbacks(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1malloc(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1malloc(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   size_t arg1 ;
   void *result = 0 ;
@@ -3357,7 +3357,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1malloc(JNIEnv *jenv, jclass jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1free(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1free(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -3367,7 +3367,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1free(JNIEnv *jenv, jclass jcls, 
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1VERSION_1MAJOR_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1VERSION_1MAJOR_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -3379,7 +3379,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1VERSION_1MAJOR_1get(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1VERSION_1MINOR_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1VERSION_1MINOR_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -3391,7 +3391,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1VERSION_1MINOR_1get(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1VERSION_1PATCH_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1VERSION_1PATCH_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -3403,7 +3403,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1VERSION_1PATCH_1get(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1VERSION_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1VERSION_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -3415,7 +3415,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1VERSION_1get(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1TYPE_1STREAM_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1TYPE_1STREAM_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketType result;
   
@@ -3427,7 +3427,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1TYPE_1STREAM_1get(JNIEnv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1TYPE_1DATAGRAM_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1TYPE_1DATAGRAM_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketType result;
   
@@ -3439,7 +3439,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1TYPE_1DATAGRAM_1get(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1WAIT_1NONE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1WAIT_1NONE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketWait result;
   
@@ -3451,7 +3451,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1WAIT_1NONE_1get(JNIEnv *
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1WAIT_1SEND_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1WAIT_1SEND_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketWait result;
   
@@ -3463,7 +3463,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1WAIT_1SEND_1get(JNIEnv *
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1WAIT_1RECEIVE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1WAIT_1RECEIVE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketWait result;
   
@@ -3475,7 +3475,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1WAIT_1RECEIVE_1get(JNIEn
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1WAIT_1INTERRUPT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1WAIT_1INTERRUPT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketWait result;
   
@@ -3487,7 +3487,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1WAIT_1INTERRUPT_1get(JNI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1NONBLOCK_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKOPT_1NONBLOCK_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketOption result;
   
@@ -3499,7 +3499,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1NONBLOCK_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1BROADCAST_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKOPT_1BROADCAST_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketOption result;
   
@@ -3511,7 +3511,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1BROADCAST_1get(JNIEnv *
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1RCVBUF_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKOPT_1RCVBUF_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketOption result;
   
@@ -3523,7 +3523,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1RCVBUF_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1SNDBUF_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKOPT_1SNDBUF_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketOption result;
   
@@ -3535,7 +3535,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1SNDBUF_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1REUSEADDR_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKOPT_1REUSEADDR_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketOption result;
   
@@ -3547,7 +3547,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1REUSEADDR_1get(JNIEnv *
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1RCVTIMEO_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKOPT_1RCVTIMEO_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketOption result;
   
@@ -3559,7 +3559,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1RCVTIMEO_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1SNDTIMEO_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKOPT_1SNDTIMEO_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketOption result;
   
@@ -3571,7 +3571,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1SNDTIMEO_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1ERROR_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKOPT_1ERROR_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketOption result;
   
@@ -3583,7 +3583,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1ERROR_1get(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1NODELAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKOPT_1NODELAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketOption result;
   
@@ -3595,7 +3595,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKOPT_1NODELAY_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1SHUTDOWN_1READ_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1SHUTDOWN_1READ_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketShutdown result;
   
@@ -3607,7 +3607,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1SHUTDOWN_1READ_1get(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1SHUTDOWN_1WRITE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1SHUTDOWN_1WRITE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketShutdown result;
   
@@ -3619,7 +3619,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1SHUTDOWN_1WRITE_1get(JNI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1SHUTDOWN_1READ_1WRITE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1SOCKET_1SHUTDOWN_1READ_1WRITE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetSocketShutdown result;
   
@@ -3631,7 +3631,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1SOCKET_1SHUTDOWN_1READ_1WRITE_1g
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1ANY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1HOST_1ANY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -3643,7 +3643,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1ANY_1get(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENET_1HOST_1BROADCAST_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENET_1HOST_1BROADCAST_1get(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   unsigned int result;
   
@@ -3655,7 +3655,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENET_1HOST_1BROADCAST_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PORT_1ANY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PORT_1ANY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -3667,7 +3667,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PORT_1ANY_1get(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAddress_1host_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetAddress_1host_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetAddress *arg1 = (struct _ENetAddress *) 0 ;
   enet_uint32 arg2 ;
   
@@ -3680,7 +3680,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAddress_1host_1set(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetAddress_1host_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetAddress_1host_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetAddress *arg1 = (struct _ENetAddress *) 0 ;
   enet_uint32 result;
@@ -3695,7 +3695,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetAddress_1host_1get(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAddress_1port_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetAddress_1port_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetAddress *arg1 = (struct _ENetAddress *) 0 ;
   enet_uint16 arg2 ;
   
@@ -3708,7 +3708,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAddress_1port_1set(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetAddress_1port_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetAddress_1port_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetAddress *arg1 = (struct _ENetAddress *) 0 ;
   enet_uint16 result;
@@ -3723,7 +3723,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetAddress_1port_1get(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetAddress(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetAddress(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetAddress *result = 0 ;
   
@@ -3735,7 +3735,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetAddress(JNIEnv *jenv, jclass
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetAddress(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetAddress(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetAddress *arg1 = (struct _ENetAddress *) 0 ;
   
   (void)jenv;
@@ -3745,7 +3745,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetAddress(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1RELIABLE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PACKET_1FLAG_1RELIABLE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPacketFlag result;
   
@@ -3757,7 +3757,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1RELIABLE_1get(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1UNSEQUENCED_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PACKET_1FLAG_1UNSEQUENCED_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPacketFlag result;
   
@@ -3769,7 +3769,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1UNSEQUENCED_1get(J
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1NO_1ALLOCATE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PACKET_1FLAG_1NO_1ALLOCATE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPacketFlag result;
   
@@ -3781,7 +3781,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1NO_1ALLOCATE_1get(
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1UNRELIABLE_1FRAGMENT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PACKET_1FLAG_1UNRELIABLE_1FRAGMENT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPacketFlag result;
   
@@ -3793,7 +3793,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1UNRELIABLE_1FRAGME
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1SENT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PACKET_1FLAG_1SENT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPacketFlag result;
   
@@ -3805,7 +3805,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PACKET_1FLAG_1SENT_1get(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1referenceCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPacket_1referenceCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   size_t arg2 ;
   
@@ -3818,7 +3818,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1referenceCount_1set(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1referenceCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPacket_1referenceCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   size_t result;
@@ -3833,7 +3833,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1referenceCount_1get(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1flags_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPacket_1flags_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   enet_uint32 arg2 ;
   
@@ -3846,7 +3846,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1flags_1set(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1flags_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPacket_1flags_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   enet_uint32 result;
@@ -3861,7 +3861,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1flags_1get(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPacket_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   enet_uint8 *arg2 = (enet_uint8 *) 0 ;
   
@@ -3874,7 +3874,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1data_1set(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPacket_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   enet_uint8 *result = 0 ;
@@ -3889,7 +3889,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1data_1get(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPacket_1dataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   size_t arg2 ;
   
@@ -3902,7 +3902,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1dataLength_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPacket_1dataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   size_t result;
@@ -3917,7 +3917,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1dataLength_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1freeCallback_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPacket_1freeCallback_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   ENetPacketFreeCallback arg2 = (ENetPacketFreeCallback) 0 ;
   
@@ -3930,7 +3930,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1freeCallback_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1freeCallback_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPacket_1freeCallback_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   ENetPacketFreeCallback result;
@@ -3945,7 +3945,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1freeCallback_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1userData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPacket_1userData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   void *arg2 = (void *) 0 ;
   
@@ -3958,7 +3958,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPacket_1userData_1set(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1userData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPacket_1userData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   void *result = 0 ;
@@ -3973,7 +3973,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPacket_1userData_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetPacket(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetPacket(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetPacket *result = 0 ;
   
@@ -3985,7 +3985,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetPacket(JNIEnv *jenv, jclass 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetPacket(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetPacket(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   
   (void)jenv;
@@ -3995,7 +3995,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetPacket(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1acknowledgementList_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetAcknowledgement_1acknowledgementList_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetAcknowledgement *arg1 = (struct _ENetAcknowledgement *) 0 ;
   ENetListNode *arg2 = (ENetListNode *) 0 ;
   
@@ -4009,7 +4009,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1acknowledgementLi
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1acknowledgementList_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetAcknowledgement_1acknowledgementList_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetAcknowledgement *arg1 = (struct _ENetAcknowledgement *) 0 ;
   ENetListNode *result = 0 ;
@@ -4024,7 +4024,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1acknowledgementL
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1sentTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetAcknowledgement_1sentTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetAcknowledgement *arg1 = (struct _ENetAcknowledgement *) 0 ;
   enet_uint32 arg2 ;
   
@@ -4037,7 +4037,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1sentTime_1set(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1sentTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetAcknowledgement_1sentTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetAcknowledgement *arg1 = (struct _ENetAcknowledgement *) 0 ;
   enet_uint32 result;
@@ -4052,7 +4052,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1sentTime_1get(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1command_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetAcknowledgement_1command_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetAcknowledgement *arg1 = (struct _ENetAcknowledgement *) 0 ;
   ENetProtocol *arg2 = (ENetProtocol *) 0 ;
   
@@ -4066,7 +4066,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1command_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1command_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetAcknowledgement_1command_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetAcknowledgement *arg1 = (struct _ENetAcknowledgement *) 0 ;
   ENetProtocol *result = 0 ;
@@ -4081,7 +4081,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetAcknowledgement_1command_1get(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetAcknowledgement(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetAcknowledgement(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetAcknowledgement *result = 0 ;
   
@@ -4093,7 +4093,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetAcknowledgement(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetAcknowledgement(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetAcknowledgement(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetAcknowledgement *arg1 = (struct _ENetAcknowledgement *) 0 ;
   
   (void)jenv;
@@ -4103,7 +4103,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetAcknowledgement(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1outgoingCommandList_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1outgoingCommandList_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   ENetListNode *arg2 = (ENetListNode *) 0 ;
   
@@ -4117,7 +4117,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1outgoingCommandLi
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1outgoingCommandList_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1outgoingCommandList_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   ENetListNode *result = 0 ;
@@ -4132,7 +4132,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1outgoingCommandL
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1reliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1reliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint16 arg2 ;
   
@@ -4145,7 +4145,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1reliableSequenceN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1reliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1reliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint16 result;
@@ -4160,7 +4160,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1reliableSequenceN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1unreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1unreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint16 arg2 ;
   
@@ -4173,7 +4173,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1unreliableSequenc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1unreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1unreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint16 result;
@@ -4188,7 +4188,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1unreliableSequenc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1sentTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1sentTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint32 arg2 ;
   
@@ -4201,7 +4201,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1sentTime_1set(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1sentTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1sentTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint32 result;
@@ -4216,7 +4216,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1sentTime_1get(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1roundTripTimeout_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1roundTripTimeout_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint32 arg2 ;
   
@@ -4229,7 +4229,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1roundTripTimeout_
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1roundTripTimeout_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1roundTripTimeout_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint32 result;
@@ -4244,7 +4244,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1roundTripTimeout
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1roundTripTimeoutLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1roundTripTimeoutLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint32 arg2 ;
   
@@ -4257,7 +4257,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1roundTripTimeoutL
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1roundTripTimeoutLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1roundTripTimeoutLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint32 result;
@@ -4272,7 +4272,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1roundTripTimeout
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1fragmentOffset_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1fragmentOffset_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint32 arg2 ;
   
@@ -4285,7 +4285,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1fragmentOffset_1s
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1fragmentOffset_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1fragmentOffset_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint32 result;
@@ -4300,7 +4300,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1fragmentOffset_1
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1fragmentLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1fragmentLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint16 arg2 ;
   
@@ -4313,7 +4313,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1fragmentLength_1s
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1fragmentLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1fragmentLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint16 result;
@@ -4328,7 +4328,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1fragmentLength_1g
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1sendAttempts_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1sendAttempts_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint16 arg2 ;
   
@@ -4341,7 +4341,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1sendAttempts_1set
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1sendAttempts_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1sendAttempts_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   enet_uint16 result;
@@ -4356,7 +4356,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1sendAttempts_1get
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1command_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1command_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   ENetProtocol *arg2 = (ENetProtocol *) 0 ;
   
@@ -4370,7 +4370,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1command_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1command_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1command_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   ENetProtocol *result = 0 ;
@@ -4385,7 +4385,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1command_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1packet_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1packet_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   ENetPacket *arg2 = (ENetPacket *) 0 ;
   
@@ -4399,7 +4399,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1packet_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1packet_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetOutgoingCommand_1packet_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   ENetPacket *result = 0 ;
@@ -4414,7 +4414,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetOutgoingCommand_1packet_1get(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetOutgoingCommand(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetOutgoingCommand(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetOutgoingCommand *result = 0 ;
   
@@ -4426,7 +4426,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetOutgoingCommand(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetOutgoingCommand(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetOutgoingCommand(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetOutgoingCommand *arg1 = (struct _ENetOutgoingCommand *) 0 ;
   
   (void)jenv;
@@ -4436,7 +4436,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetOutgoingCommand(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1incomingCommandList_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1incomingCommandList_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   ENetListNode *arg2 = (ENetListNode *) 0 ;
   
@@ -4450,7 +4450,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1incomingCommandLi
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1incomingCommandList_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1incomingCommandList_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   ENetListNode *result = 0 ;
@@ -4465,7 +4465,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1incomingCommandL
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1reliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1reliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint16 arg2 ;
   
@@ -4478,7 +4478,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1reliableSequenceN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1reliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1reliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint16 result;
@@ -4493,7 +4493,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1reliableSequenceN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1unreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1unreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint16 arg2 ;
   
@@ -4506,7 +4506,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1unreliableSequenc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1unreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1unreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint16 result;
@@ -4521,7 +4521,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1unreliableSequenc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1command_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1command_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   ENetProtocol *arg2 = (ENetProtocol *) 0 ;
   
@@ -4535,7 +4535,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1command_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1command_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1command_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   ENetProtocol *result = 0 ;
@@ -4550,7 +4550,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1command_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragmentCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1fragmentCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint32 arg2 ;
   
@@ -4563,7 +4563,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragmentCount_1se
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragmentCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1fragmentCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint32 result;
@@ -4578,7 +4578,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragmentCount_1g
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragmentsRemaining_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1fragmentsRemaining_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint32 arg2 ;
   
@@ -4591,7 +4591,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragmentsRemainin
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragmentsRemaining_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1fragmentsRemaining_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint32 result;
@@ -4606,7 +4606,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragmentsRemaini
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragments_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1fragments_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint32 *arg2 = (enet_uint32 *) 0 ;
   
@@ -4619,7 +4619,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragments_1set(JN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragments_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1fragments_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   enet_uint32 *result = 0 ;
@@ -4634,7 +4634,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1fragments_1get(J
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1packet_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1packet_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   ENetPacket *arg2 = (ENetPacket *) 0 ;
   
@@ -4648,7 +4648,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1packet_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1packet_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetIncomingCommand_1packet_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   ENetPacket *result = 0 ;
@@ -4663,7 +4663,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetIncomingCommand_1packet_1get(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetIncomingCommand(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetIncomingCommand(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetIncomingCommand *result = 0 ;
   
@@ -4675,7 +4675,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetIncomingCommand(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetIncomingCommand(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetIncomingCommand(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetIncomingCommand *arg1 = (struct _ENetIncomingCommand *) 0 ;
   
   (void)jenv;
@@ -4685,7 +4685,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetIncomingCommand(JNIEnv *je
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1DISCONNECTED_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1DISCONNECTED_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4697,7 +4697,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1DISCONNECTED_1get(J
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1CONNECTING_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1CONNECTING_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4709,7 +4709,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1CONNECTING_1get(JNI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1ACKNOWLEDGING_1CONNECT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1ACKNOWLEDGING_1CONNECT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4721,7 +4721,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1ACKNOWLEDGING_1CONN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1CONNECTION_1PENDING_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1CONNECTION_1PENDING_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4733,7 +4733,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1CONNECTION_1PENDING
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1CONNECTION_1SUCCEEDED_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1CONNECTION_1SUCCEEDED_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4745,7 +4745,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1CONNECTION_1SUCCEED
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1CONNECTED_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1CONNECTED_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4757,7 +4757,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1CONNECTED_1get(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1DISCONNECT_1LATER_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1DISCONNECT_1LATER_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4769,7 +4769,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1DISCONNECT_1LATER_1
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1DISCONNECTING_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1DISCONNECTING_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4781,7 +4781,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1DISCONNECTING_1get(
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1ACKNOWLEDGING_1DISCONNECT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1ACKNOWLEDGING_1DISCONNECT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4793,7 +4793,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1ACKNOWLEDGING_1DISC
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1ZOMBIE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1STATE_1ZOMBIE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetPeerState result;
   
@@ -4805,7 +4805,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1STATE_1ZOMBIE_1get(JNIEnv 
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1RECEIVE_1BUFFER_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1HOST_1RECEIVE_1BUFFER_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4817,7 +4817,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1RECEIVE_1BUFFER_1SIZE_1get
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1SEND_1BUFFER_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1HOST_1SEND_1BUFFER_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4829,7 +4829,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1SEND_1BUFFER_1SIZE_1get(JN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1BANDWIDTH_1THROTTLE_1INTERVAL_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1HOST_1BANDWIDTH_1THROTTLE_1INTERVAL_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4841,7 +4841,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1BANDWIDTH_1THROTTLE_1INTER
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1DEFAULT_1MTU_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1HOST_1DEFAULT_1MTU_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4853,7 +4853,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1DEFAULT_1MTU_1get(JNIEnv *
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1DEFAULT_1MAXIMUM_1PACKET_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1HOST_1DEFAULT_1MAXIMUM_1PACKET_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4865,7 +4865,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1DEFAULT_1MAXIMUM_1PACKET_1
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1DEFAULT_1MAXIMUM_1WAITING_1DATA_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1HOST_1DEFAULT_1MAXIMUM_1WAITING_1DATA_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4877,7 +4877,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1HOST_1DEFAULT_1MAXIMUM_1WAITING_
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1DEFAULT_1ROUND_1TRIP_1TIME_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1DEFAULT_1ROUND_1TRIP_1TIME_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4889,7 +4889,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1DEFAULT_1ROUND_1TRIP_1TIME
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1DEFAULT_1PACKET_1THROTTLE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1DEFAULT_1PACKET_1THROTTLE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4901,7 +4901,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1DEFAULT_1PACKET_1THROTTLE_
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1SCALE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1SCALE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4913,7 +4913,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1SCALE_1g
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1COUNTER_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1COUNTER_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4925,7 +4925,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1COUNTER_
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1ACCELERATION_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1ACCELERATION_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4937,7 +4937,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1ACCELERA
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1DECELERATION_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1DECELERATION_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4949,7 +4949,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1DECELERA
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1INTERVAL_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1INTERVAL_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4961,7 +4961,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1THROTTLE_1INTERVAL
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1LOSS_1SCALE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1PACKET_1LOSS_1SCALE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4973,7 +4973,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1LOSS_1SCALE_1get(J
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1LOSS_1INTERVAL_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1PACKET_1LOSS_1INTERVAL_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4985,7 +4985,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PACKET_1LOSS_1INTERVAL_1ge
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1WINDOW_1SIZE_1SCALE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1WINDOW_1SIZE_1SCALE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -4997,7 +4997,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1WINDOW_1SIZE_1SCALE_1get(J
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1TIMEOUT_1LIMIT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1TIMEOUT_1LIMIT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5009,7 +5009,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1TIMEOUT_1LIMIT_1get(JNIEnv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1TIMEOUT_1MINIMUM_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1TIMEOUT_1MINIMUM_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5021,7 +5021,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1TIMEOUT_1MINIMUM_1get(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1TIMEOUT_1MAXIMUM_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1TIMEOUT_1MAXIMUM_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5033,7 +5033,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1TIMEOUT_1MAXIMUM_1get(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PING_1INTERVAL_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1PING_1INTERVAL_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5045,7 +5045,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1PING_1INTERVAL_1get(JNIEnv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1UNSEQUENCED_1WINDOWS_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1UNSEQUENCED_1WINDOWS_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5057,7 +5057,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1UNSEQUENCED_1WINDOWS_1get(
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1UNSEQUENCED_1WINDOW_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1UNSEQUENCED_1WINDOW_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5069,7 +5069,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1UNSEQUENCED_1WINDOW_1SIZE_
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1FREE_1UNSEQUENCED_1WINDOWS_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1FREE_1UNSEQUENCED_1WINDOWS_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5081,7 +5081,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1FREE_1UNSEQUENCED_1WINDOWS
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1RELIABLE_1WINDOWS_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1RELIABLE_1WINDOWS_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5093,7 +5093,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1RELIABLE_1WINDOWS_1get(JNI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1RELIABLE_1WINDOW_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1RELIABLE_1WINDOW_1SIZE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5105,7 +5105,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1RELIABLE_1WINDOW_1SIZE_1ge
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1FREE_1RELIABLE_1WINDOWS_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1PEER_1FREE_1RELIABLE_1WINDOWS_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -5117,7 +5117,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1PEER_1FREE_1RELIABLE_1WINDOWS_1g
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1outgoingReliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetChannel_1outgoingReliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 arg2 ;
   
@@ -5130,7 +5130,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1outgoingReliableSequenceN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1outgoingReliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetChannel_1outgoingReliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 result;
@@ -5145,7 +5145,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1outgoingReliableSequenceN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1outgoingUnreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetChannel_1outgoingUnreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 arg2 ;
   
@@ -5158,7 +5158,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1outgoingUnreliableSequenc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1outgoingUnreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetChannel_1outgoingUnreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 result;
@@ -5173,7 +5173,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1outgoingUnreliableSequenc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1usedReliableWindows_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetChannel_1usedReliableWindows_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 arg2 ;
   
@@ -5186,7 +5186,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1usedReliableWindows_1set(
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1usedReliableWindows_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetChannel_1usedReliableWindows_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 result;
@@ -5201,7 +5201,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1usedReliableWindows_1get(
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1reliableWindows_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetChannel_1reliableWindows_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 *arg2 ;
   
@@ -5219,7 +5219,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1reliableWindows_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetChannel_1reliableWindows_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetChannel_1reliableWindows_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 *result = 0 ;
@@ -5234,7 +5234,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetChannel_1reliableWindows_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1incomingReliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetChannel_1incomingReliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 arg2 ;
   
@@ -5247,7 +5247,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1incomingReliableSequenceN
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1incomingReliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetChannel_1incomingReliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 result;
@@ -5262,7 +5262,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1incomingReliableSequenceN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1incomingUnreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetChannel_1incomingUnreliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 arg2 ;
   
@@ -5275,7 +5275,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1incomingUnreliableSequenc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1incomingUnreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetChannel_1incomingUnreliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   enet_uint16 result;
@@ -5290,7 +5290,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetChannel_1incomingUnreliableSequenc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1incomingReliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetChannel_1incomingReliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   ENetList *arg2 = (ENetList *) 0 ;
   
@@ -5304,7 +5304,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1incomingReliableCommands_
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetChannel_1incomingReliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetChannel_1incomingReliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   ENetList *result = 0 ;
@@ -5319,7 +5319,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetChannel_1incomingReliableCommands
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1incomingUnreliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetChannel_1incomingUnreliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   ENetList *arg2 = (ENetList *) 0 ;
   
@@ -5333,7 +5333,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetChannel_1incomingUnreliableCommand
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetChannel_1incomingUnreliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetChannel_1incomingUnreliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   ENetList *result = 0 ;
@@ -5348,7 +5348,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetChannel_1incomingUnreliableComman
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetChannel(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetChannel(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetChannel *result = 0 ;
   
@@ -5360,7 +5360,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetChannel(JNIEnv *jenv, jclass
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetChannel(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetChannel(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetChannel *arg1 = (struct _ENetChannel *) 0 ;
   
   (void)jenv;
@@ -5370,7 +5370,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetChannel(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1dispatchList_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1dispatchList_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetListNode *arg2 = (ENetListNode *) 0 ;
   
@@ -5384,7 +5384,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1dispatchList_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1dispatchList_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1dispatchList_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetListNode *result = 0 ;
@@ -5399,7 +5399,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1dispatchList_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1host_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1host_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   struct _ENetHost *arg2 = (struct _ENetHost *) 0 ;
   
@@ -5413,7 +5413,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1host_1set(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1host_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1host_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   struct _ENetHost *result = 0 ;
@@ -5428,7 +5428,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1host_1get(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingPeerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingPeerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 arg2 ;
   
@@ -5441,7 +5441,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingPeerID_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingPeerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingPeerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 result;
@@ -5456,7 +5456,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingPeerID_1get(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingPeerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingPeerID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 arg2 ;
   
@@ -5469,7 +5469,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingPeerID_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1incomingPeerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingPeerID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 result;
@@ -5484,7 +5484,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1incomingPeerID_1get(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1connectID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1connectID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5497,7 +5497,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1connectID_1set(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1connectID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1connectID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5512,7 +5512,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1connectID_1get(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint8 arg2 ;
   
@@ -5525,7 +5525,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingSessionID_1set(JNIEn
 }
 
 
-SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jshort JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jshort jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint8 result;
@@ -5540,7 +5540,7 @@ SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingSessionID_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingSessionID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint8 arg2 ;
   
@@ -5553,7 +5553,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingSessionID_1set(JNIEn
 }
 
 
-SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetPeer_1incomingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jshort JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingSessionID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jshort jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint8 result;
@@ -5568,7 +5568,7 @@ SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetPeer_1incomingSessionID_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1address_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1address_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
   
@@ -5582,7 +5582,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1address_1set(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1address_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1address_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetAddress *result = 0 ;
@@ -5597,7 +5597,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1address_1get(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   void *arg2 = (void *) 0 ;
   
@@ -5610,7 +5610,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1data_1set(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   void *result = 0 ;
@@ -5625,7 +5625,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1data_1get(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1state_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1state_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetPeerState arg2 ;
   
@@ -5638,7 +5638,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1state_1set(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1state_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetPeer_1state_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetPeerState result;
@@ -5653,7 +5653,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1state_1get(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1channels_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1channels_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetChannel *arg2 = (ENetChannel *) 0 ;
   
@@ -5667,7 +5667,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1channels_1set(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1channels_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1channels_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetChannel *result = 0 ;
@@ -5682,7 +5682,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1channels_1get(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1channelCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1channelCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   size_t arg2 ;
   
@@ -5695,7 +5695,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1channelCount_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1channelCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1channelCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   size_t result;
@@ -5710,7 +5710,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1channelCount_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5723,7 +5723,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingBandwidth_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5738,7 +5738,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1incomingBandwidth_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5751,7 +5751,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingBandwidth_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5766,7 +5766,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingBandwidth_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingBandwidthThrottleEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingBandwidthThrottleEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5779,7 +5779,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingBandwidthThrottleEpo
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1incomingBandwidthThrottleEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingBandwidthThrottleEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5794,7 +5794,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1incomingBandwidthThrottleEp
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingBandwidthThrottleEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingBandwidthThrottleEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5807,7 +5807,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingBandwidthThrottleEpo
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingBandwidthThrottleEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingBandwidthThrottleEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5822,7 +5822,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingBandwidthThrottleEp
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingDataTotal_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingDataTotal_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5835,7 +5835,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingDataTotal_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1incomingDataTotal_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingDataTotal_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5850,7 +5850,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1incomingDataTotal_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingDataTotal_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingDataTotal_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5863,7 +5863,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingDataTotal_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingDataTotal_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingDataTotal_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5878,7 +5878,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingDataTotal_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lastSendTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1lastSendTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5891,7 +5891,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lastSendTime_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lastSendTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1lastSendTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5906,7 +5906,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lastSendTime_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lastReceiveTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1lastReceiveTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5919,7 +5919,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lastReceiveTime_1set(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lastReceiveTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1lastReceiveTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5934,7 +5934,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lastReceiveTime_1get(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1nextTimeout_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1nextTimeout_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5947,7 +5947,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1nextTimeout_1set(JNIEnv *jen
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1nextTimeout_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1nextTimeout_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5962,7 +5962,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1nextTimeout_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1earliestTimeout_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1earliestTimeout_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -5975,7 +5975,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1earliestTimeout_1set(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1earliestTimeout_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1earliestTimeout_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -5990,7 +5990,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1earliestTimeout_1get(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetLossEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetLossEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6003,7 +6003,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetLossEpoch_1set(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetLossEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetLossEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6018,7 +6018,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetLossEpoch_1get(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetsSent_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetsSent_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6031,7 +6031,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetsSent_1set(JNIEnv *jen
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetsSent_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetsSent_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6046,7 +6046,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetsSent_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetsLost_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetsLost_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6059,7 +6059,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetsLost_1set(JNIEnv *jen
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetsLost_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetsLost_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6074,7 +6074,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetsLost_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetLoss_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetLoss_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6087,7 +6087,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetLoss_1set(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetLoss_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetLoss_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6102,7 +6102,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetLoss_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetLossVariance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetLossVariance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6115,7 +6115,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetLossVariance_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetLossVariance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetLossVariance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6130,7 +6130,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetLossVariance_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottle_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottle_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6143,7 +6143,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottle_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottle_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottle_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6158,7 +6158,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottle_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6171,7 +6171,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleLimit_1set(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6186,7 +6186,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleLimit_1get(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleCounter_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleCounter_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6199,7 +6199,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleCounter_1set(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleCounter_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleCounter_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6214,7 +6214,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleCounter_1get(
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6227,7 +6227,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleEpoch_1set(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6242,7 +6242,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleEpoch_1get(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleAcceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleAcceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6255,7 +6255,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleAcceleration_1
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleAcceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleAcceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6270,7 +6270,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleAcceleration_
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleDeceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleDeceleration_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6283,7 +6283,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleDeceleration_1
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleDeceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleDeceleration_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6298,7 +6298,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleDeceleration_
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6311,7 +6311,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleInterval_1set(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1packetThrottleInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6326,7 +6326,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1packetThrottleInterval_1get
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1pingInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1pingInterval_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6339,7 +6339,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1pingInterval_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1pingInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1pingInterval_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6354,7 +6354,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1pingInterval_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1timeoutLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6367,7 +6367,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutLimit_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1timeoutLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6382,7 +6382,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutLimit_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutMinimum_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1timeoutMinimum_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6395,7 +6395,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutMinimum_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutMinimum_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1timeoutMinimum_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6410,7 +6410,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutMinimum_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutMaximum_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1timeoutMaximum_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6423,7 +6423,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutMaximum_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutMaximum_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1timeoutMaximum_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6438,7 +6438,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1timeoutMaximum_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lastRoundTripTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1lastRoundTripTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6451,7 +6451,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lastRoundTripTime_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lastRoundTripTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1lastRoundTripTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6466,7 +6466,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lastRoundTripTime_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lowestRoundTripTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1lowestRoundTripTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6479,7 +6479,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lowestRoundTripTime_1set(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lowestRoundTripTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1lowestRoundTripTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6494,7 +6494,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lowestRoundTripTime_1get(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lastRoundTripTimeVariance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1lastRoundTripTimeVariance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6507,7 +6507,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1lastRoundTripTimeVariance_1s
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lastRoundTripTimeVariance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1lastRoundTripTimeVariance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6522,7 +6522,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1lastRoundTripTimeVariance_1
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1highestRoundTripTimeVariance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1highestRoundTripTimeVariance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6535,7 +6535,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1highestRoundTripTimeVariance
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1highestRoundTripTimeVariance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1highestRoundTripTimeVariance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6550,7 +6550,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1highestRoundTripTimeVarianc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1roundTripTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1roundTripTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6563,7 +6563,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1roundTripTime_1set(JNIEnv *j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1roundTripTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1roundTripTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6578,7 +6578,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1roundTripTime_1get(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1roundTripTimeVariance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1roundTripTimeVariance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6591,7 +6591,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1roundTripTimeVariance_1set(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1roundTripTimeVariance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1roundTripTimeVariance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6606,7 +6606,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1roundTripTimeVariance_1get(
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1mtu_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1mtu_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6619,7 +6619,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1mtu_1set(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1mtu_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1mtu_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6634,7 +6634,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1mtu_1get(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1windowSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1windowSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6647,7 +6647,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1windowSize_1set(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1windowSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1windowSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6662,7 +6662,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1windowSize_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1reliableDataInTransit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1reliableDataInTransit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -6675,7 +6675,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1reliableDataInTransit_1set(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1reliableDataInTransit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1reliableDataInTransit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -6690,7 +6690,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1reliableDataInTransit_1get(
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingReliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingReliableSequenceNumber_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 arg2 ;
   
@@ -6703,7 +6703,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingReliableSequenceNumb
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingReliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingReliableSequenceNumber_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 result;
@@ -6718,7 +6718,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingReliableSequenceNumb
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1acknowledgements_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1acknowledgements_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *arg2 = (ENetList *) 0 ;
   
@@ -6732,7 +6732,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1acknowledgements_1set(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1acknowledgements_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1acknowledgements_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *result = 0 ;
@@ -6747,7 +6747,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1acknowledgements_1get(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1sentReliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1sentReliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *arg2 = (ENetList *) 0 ;
   
@@ -6761,7 +6761,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1sentReliableCommands_1set(JN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1sentReliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1sentReliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *result = 0 ;
@@ -6776,7 +6776,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1sentReliableCommands_1get(J
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1sentUnreliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1sentUnreliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *arg2 = (ENetList *) 0 ;
   
@@ -6790,7 +6790,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1sentUnreliableCommands_1set(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1sentUnreliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1sentUnreliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *result = 0 ;
@@ -6805,7 +6805,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1sentUnreliableCommands_1get
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingReliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingReliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *arg2 = (ENetList *) 0 ;
   
@@ -6819,7 +6819,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingReliableCommands_1se
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingReliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingReliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *result = 0 ;
@@ -6834,7 +6834,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingReliableCommands_1g
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingUnreliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingUnreliableCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *arg2 = (ENetList *) 0 ;
   
@@ -6848,7 +6848,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingUnreliableCommands_1
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingUnreliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingUnreliableCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *result = 0 ;
@@ -6863,7 +6863,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingUnreliableCommands_
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1dispatchedCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1dispatchedCommands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *arg2 = (ENetList *) 0 ;
   
@@ -6877,7 +6877,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1dispatchedCommands_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1dispatchedCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1dispatchedCommands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   ENetList *result = 0 ;
@@ -6892,7 +6892,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1dispatchedCommands_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1needsDispatch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1needsDispatch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   int arg2 ;
   
@@ -6905,7 +6905,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1needsDispatch_1set(JNIEnv *j
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1needsDispatch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetPeer_1needsDispatch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   int result;
@@ -6920,7 +6920,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1needsDispatch_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingUnsequencedGroup_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingUnsequencedGroup_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 arg2 ;
   
@@ -6933,7 +6933,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1incomingUnsequencedGroup_1se
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1incomingUnsequencedGroup_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetPeer_1incomingUnsequencedGroup_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 result;
@@ -6948,7 +6948,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1incomingUnsequencedGroup_1ge
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingUnsequencedGroup_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingUnsequencedGroup_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 arg2 ;
   
@@ -6961,7 +6961,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingUnsequencedGroup_1se
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingUnsequencedGroup_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetPeer_1outgoingUnsequencedGroup_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint16 result;
@@ -6976,7 +6976,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetPeer_1outgoingUnsequencedGroup_1ge
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1unsequencedWindow_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1unsequencedWindow_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 *arg2 ;
   
@@ -6994,7 +6994,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1unsequencedWindow_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1unsequencedWindow_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1unsequencedWindow_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 *result = 0 ;
@@ -7009,7 +7009,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1unsequencedWindow_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1eventData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1eventData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -7022,7 +7022,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1eventData_1set(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1eventData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1eventData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   enet_uint32 result;
@@ -7037,7 +7037,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1eventData_1get(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1totalWaitingData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetPeer_1totalWaitingData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   size_t arg2 ;
   
@@ -7050,7 +7050,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetPeer_1totalWaitingData_1set(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1totalWaitingData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetPeer_1totalWaitingData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   size_t result;
@@ -7065,7 +7065,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetPeer_1totalWaitingData_1get(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetPeer(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetPeer(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetPeer *result = 0 ;
   
@@ -7077,7 +7077,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetPeer(JNIEnv *jenv, jclass jc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetPeer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetPeer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetPeer *arg1 = (struct _ENetPeer *) 0 ;
   
   (void)jenv;
@@ -7087,7 +7087,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetPeer(JNIEnv *jenv, jclass 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCompressor_1context_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetCompressor_1context_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetCompressor *arg1 = (struct _ENetCompressor *) 0 ;
   void *arg2 = (void *) 0 ;
   
@@ -7100,7 +7100,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCompressor_1context_1set(JNIEnv *j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCompressor_1context_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetCompressor_1context_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetCompressor *arg1 = (struct _ENetCompressor *) 0 ;
   void *result = 0 ;
@@ -7115,7 +7115,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCompressor_1context_1get(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCompressor_1compress_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetCompressor_1compress_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetCompressor *arg1 = (struct _ENetCompressor *) 0 ;
   size_t (*arg2)(void *,ENetBuffer const *,size_t,size_t,enet_uint8 *,size_t) = (size_t (*)(void *,ENetBuffer const *,size_t,size_t,enet_uint8 *,size_t)) 0 ;
   
@@ -7128,7 +7128,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCompressor_1compress_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCompressor_1compress_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetCompressor_1compress_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetCompressor *arg1 = (struct _ENetCompressor *) 0 ;
   size_t (*result)(void *,ENetBuffer const *,size_t,size_t,enet_uint8 *,size_t) = 0 ;
@@ -7143,7 +7143,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCompressor_1compress_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCompressor_1decompress_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetCompressor_1decompress_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetCompressor *arg1 = (struct _ENetCompressor *) 0 ;
   size_t (*arg2)(void *,enet_uint8 const *,size_t,enet_uint8 *,size_t) = (size_t (*)(void *,enet_uint8 const *,size_t,enet_uint8 *,size_t)) 0 ;
   
@@ -7156,7 +7156,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCompressor_1decompress_1set(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCompressor_1decompress_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetCompressor_1decompress_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetCompressor *arg1 = (struct _ENetCompressor *) 0 ;
   size_t (*result)(void *,enet_uint8 const *,size_t,enet_uint8 *,size_t) = 0 ;
@@ -7171,7 +7171,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCompressor_1decompress_1get(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCompressor_1destroy_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetCompressor_1destroy_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetCompressor *arg1 = (struct _ENetCompressor *) 0 ;
   void (*arg2)(void *) = (void (*)(void *)) 0 ;
   
@@ -7184,7 +7184,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetCompressor_1destroy_1set(JNIEnv *j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCompressor_1destroy_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetCompressor_1destroy_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetCompressor *arg1 = (struct _ENetCompressor *) 0 ;
   void (*result)(void *) = 0 ;
@@ -7199,7 +7199,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetCompressor_1destroy_1get(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetCompressor(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetCompressor(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetCompressor *result = 0 ;
   
@@ -7211,7 +7211,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetCompressor(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetCompressor(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetCompressor(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetCompressor *arg1 = (struct _ENetCompressor *) 0 ;
   
   (void)jenv;
@@ -7221,7 +7221,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetCompressor(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1socket_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1socket_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetSocket arg2 ;
   
@@ -7234,7 +7234,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1socket_1set(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetHost_1socket_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetHost_1socket_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetSocket result;
@@ -7249,7 +7249,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetHost_1socket_1get(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1address_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1address_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
   
@@ -7263,7 +7263,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1address_1set(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1address_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1address_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetAddress *result = 0 ;
@@ -7278,7 +7278,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1address_1get(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1incomingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -7291,7 +7291,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1incomingBandwidth_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1incomingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -7306,7 +7306,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1incomingBandwidth_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1outgoingBandwidth_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -7319,7 +7319,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1outgoingBandwidth_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1outgoingBandwidth_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -7334,7 +7334,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1outgoingBandwidth_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1bandwidthThrottleEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1bandwidthThrottleEpoch_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -7347,7 +7347,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1bandwidthThrottleEpoch_1set(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1bandwidthThrottleEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1bandwidthThrottleEpoch_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -7362,7 +7362,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1bandwidthThrottleEpoch_1get
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1mtu_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1mtu_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -7375,7 +7375,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1mtu_1set(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1mtu_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1mtu_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -7390,7 +7390,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1mtu_1get(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1randomSeed_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1randomSeed_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -7403,7 +7403,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1randomSeed_1set(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1randomSeed_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1randomSeed_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -7418,7 +7418,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1randomSeed_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1recalculateBandwidthLimits_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1recalculateBandwidthLimits_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   int arg2 ;
   
@@ -7431,7 +7431,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1recalculateBandwidthLimits_1
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetHost_1recalculateBandwidthLimits_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetHost_1recalculateBandwidthLimits_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   int result;
@@ -7446,7 +7446,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetHost_1recalculateBandwidthLimits_1
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1peers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1peers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetPeer *arg2 = (ENetPeer *) 0 ;
   
@@ -7460,7 +7460,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1peers_1set(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1peers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1peers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetPeer *result = 0 ;
@@ -7475,7 +7475,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1peers_1get(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1peerCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1peerCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -7488,7 +7488,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1peerCount_1set(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1peerCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1peerCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -7503,7 +7503,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1peerCount_1get(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1channelLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1channelLimit_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -7516,7 +7516,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1channelLimit_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1channelLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1channelLimit_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -7531,7 +7531,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1channelLimit_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1serviceTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1serviceTime_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -7544,7 +7544,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1serviceTime_1set(JNIEnv *jen
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1serviceTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1serviceTime_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -7559,7 +7559,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1serviceTime_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1dispatchQueue_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1dispatchQueue_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetList *arg2 = (ENetList *) 0 ;
   
@@ -7573,7 +7573,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1dispatchQueue_1set(JNIEnv *j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1dispatchQueue_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1dispatchQueue_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetList *result = 0 ;
@@ -7588,7 +7588,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1dispatchQueue_1get(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1continueSending_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1continueSending_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   int arg2 ;
   
@@ -7601,7 +7601,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1continueSending_1set(JNIEnv 
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetHost_1continueSending_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetHost_1continueSending_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   int result;
@@ -7616,7 +7616,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetHost_1continueSending_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1packetSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1packetSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -7629,7 +7629,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1packetSize_1set(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1packetSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1packetSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -7644,7 +7644,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1packetSize_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1headerFlags_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1headerFlags_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint16 arg2 ;
   
@@ -7657,7 +7657,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1headerFlags_1set(JNIEnv *jen
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetHost_1headerFlags_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetHost_1headerFlags_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint16 result;
@@ -7672,7 +7672,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetHost_1headerFlags_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1commands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1commands_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetProtocol *arg2 ;
   
@@ -7691,7 +7691,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1commands_1set(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1commands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1commands_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetProtocol *result = 0 ;
@@ -7706,7 +7706,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1commands_1get(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1commandCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1commandCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -7719,7 +7719,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1commandCount_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1commandCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1commandCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -7734,7 +7734,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1commandCount_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1buffers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1buffers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetBuffer *arg2 ;
   
@@ -7753,7 +7753,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1buffers_1set(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1buffers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1buffers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetBuffer *result = 0 ;
@@ -7768,7 +7768,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1buffers_1get(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1bufferCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1bufferCount_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -7781,7 +7781,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1bufferCount_1set(JNIEnv *jen
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1bufferCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1bufferCount_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -7796,7 +7796,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1bufferCount_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1checksum_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1checksum_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetChecksumCallback arg2 = (ENetChecksumCallback) 0 ;
   
@@ -7809,7 +7809,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1checksum_1set(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1checksum_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1checksum_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetChecksumCallback result;
@@ -7824,7 +7824,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1checksum_1get(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1compressor_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1compressor_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetCompressor *arg2 = (ENetCompressor *) 0 ;
   
@@ -7838,7 +7838,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1compressor_1set(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1compressor_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1compressor_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetCompressor *result = 0 ;
@@ -7853,7 +7853,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1compressor_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1packetData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1packetData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint8 (*arg2)[ENET_PROTOCOL_MAXIMUM_MTU] ;
   
@@ -7877,7 +7877,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1packetData_1set(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1packetData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1packetData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint8 (*result)[ENET_PROTOCOL_MAXIMUM_MTU] = 0 ;
@@ -7892,7 +7892,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1packetData_1get(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1receivedAddress_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1receivedAddress_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
   
@@ -7906,7 +7906,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1receivedAddress_1set(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1receivedAddress_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1receivedAddress_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetAddress *result = 0 ;
@@ -7921,7 +7921,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1receivedAddress_1get(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1receivedData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1receivedData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint8 *arg2 = (enet_uint8 *) 0 ;
   
@@ -7934,7 +7934,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1receivedData_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1receivedData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1receivedData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint8 *result = 0 ;
@@ -7949,7 +7949,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1receivedData_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1receivedDataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1receivedDataLength_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -7962,7 +7962,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1receivedDataLength_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1receivedDataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1receivedDataLength_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -7977,7 +7977,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1receivedDataLength_1get(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1totalSentData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1totalSentData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -7990,7 +7990,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1totalSentData_1set(JNIEnv *j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1totalSentData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1totalSentData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -8005,7 +8005,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1totalSentData_1get(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1totalSentPackets_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1totalSentPackets_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -8018,7 +8018,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1totalSentPackets_1set(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1totalSentPackets_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1totalSentPackets_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -8033,7 +8033,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1totalSentPackets_1get(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1totalReceivedData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1totalReceivedData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -8046,7 +8046,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1totalReceivedData_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1totalReceivedData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1totalReceivedData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -8061,7 +8061,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1totalReceivedData_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1totalReceivedPackets_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1totalReceivedPackets_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 arg2 ;
   
@@ -8074,7 +8074,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1totalReceivedPackets_1set(JN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1totalReceivedPackets_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1totalReceivedPackets_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   enet_uint32 result;
@@ -8089,7 +8089,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1totalReceivedPackets_1get(J
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1intercept_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1intercept_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetInterceptCallback arg2 = (ENetInterceptCallback) 0 ;
   
@@ -8102,7 +8102,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1intercept_1set(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1intercept_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1intercept_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   ENetInterceptCallback result;
@@ -8117,7 +8117,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1intercept_1get(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1connectedPeers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1connectedPeers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -8130,7 +8130,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1connectedPeers_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1connectedPeers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1connectedPeers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -8145,7 +8145,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1connectedPeers_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1bandwidthLimitedPeers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1bandwidthLimitedPeers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -8158,7 +8158,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1bandwidthLimitedPeers_1set(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1bandwidthLimitedPeers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1bandwidthLimitedPeers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -8173,7 +8173,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1bandwidthLimitedPeers_1get(
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1duplicatePeers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1duplicatePeers_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -8186,7 +8186,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1duplicatePeers_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1duplicatePeers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1duplicatePeers_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -8201,7 +8201,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1duplicatePeers_1get(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1maximumPacketSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1maximumPacketSize_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -8214,7 +8214,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1maximumPacketSize_1set(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1maximumPacketSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1maximumPacketSize_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -8229,7 +8229,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1maximumPacketSize_1get(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1maximumWaitingData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetHost_1maximumWaitingData_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -8242,7 +8242,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetHost_1maximumWaitingData_1set(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1maximumWaitingData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetHost_1maximumWaitingData_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   size_t result;
@@ -8257,7 +8257,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetHost_1maximumWaitingData_1get(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetHost(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetHost(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetHost *result = 0 ;
   
@@ -8269,7 +8269,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetHost(JNIEnv *jenv, jclass jc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetHost(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetHost(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetHost *arg1 = (struct _ENetHost *) 0 ;
   
   (void)jenv;
@@ -8279,7 +8279,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetHost(JNIEnv *jenv, jclass 
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1EVENT_1TYPE_1NONE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1EVENT_1TYPE_1NONE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetEventType result;
   
@@ -8291,7 +8291,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1EVENT_1TYPE_1NONE_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1EVENT_1TYPE_1CONNECT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1EVENT_1TYPE_1CONNECT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetEventType result;
   
@@ -8303,7 +8303,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1EVENT_1TYPE_1CONNECT_1get(JNIEnv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1EVENT_1TYPE_1DISCONNECT_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1EVENT_1TYPE_1DISCONNECT_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetEventType result;
   
@@ -8315,7 +8315,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1EVENT_1TYPE_1DISCONNECT_1get(JNI
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1EVENT_1TYPE_1RECEIVE_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1EVENT_1TYPE_1RECEIVE_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   enum _ENetEventType result;
   
@@ -8327,7 +8327,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1EVENT_1TYPE_1RECEIVE_1get(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1type_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetEvent_1type_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   ENetEventType arg2 ;
   
@@ -8340,7 +8340,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1type_1set(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetEvent_1type_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENetEvent_1type_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   ENetEventType result;
@@ -8355,7 +8355,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENetEvent_1type_1get(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1peer_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetEvent_1peer_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   ENetPeer *arg2 = (ENetPeer *) 0 ;
   
@@ -8369,7 +8369,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1peer_1set(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetEvent_1peer_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetEvent_1peer_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   ENetPeer *result = 0 ;
@@ -8384,7 +8384,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetEvent_1peer_1get(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1channelID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetEvent_1channelID_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2) {
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   enet_uint8 arg2 ;
   
@@ -8397,7 +8397,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1channelID_1set(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetEvent_1channelID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jshort JNICALL Java_ENetJava_enetJNI_ENetEvent_1channelID_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jshort jresult = 0 ;
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   enet_uint8 result;
@@ -8412,7 +8412,7 @@ SWIGEXPORT jshort JNICALL Java_ENet_enetJNI_ENetEvent_1channelID_1get(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetEvent_1data_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   enet_uint32 arg2 ;
   
@@ -8425,7 +8425,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1data_1set(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetEvent_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetEvent_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   enet_uint32 result;
@@ -8440,7 +8440,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetEvent_1data_1get(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1packet_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_ENetEvent_1packet_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   ENetPacket *arg2 = (ENetPacket *) 0 ;
   
@@ -8454,7 +8454,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_ENetEvent_1packet_1set(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetEvent_1packet_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_ENetEvent_1packet_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   ENetPacket *result = 0 ;
@@ -8469,7 +8469,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_ENetEvent_1packet_1get(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetEvent(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_new_1ENetEvent(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   struct _ENetEvent *result = 0 ;
   
@@ -8481,7 +8481,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_new_1ENetEvent(JNIEnv *jenv, jclass j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetEvent(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_delete_1ENetEvent(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   struct _ENetEvent *arg1 = (struct _ENetEvent *) 0 ;
   
   (void)jenv;
@@ -8491,7 +8491,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_delete_1ENetEvent(JNIEnv *jenv, jclass
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1initialize(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1initialize(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -8503,7 +8503,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1initialize(JNIEnv *jenv, jclass 
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1initialize_1with_1callbacks(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1initialize_1with_1callbacks(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   jint jresult = 0 ;
   ENetVersion arg1 ;
   ENetCallbacks *arg2 = (ENetCallbacks *) 0 ;
@@ -8520,14 +8520,14 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1initialize_1with_1callbacks(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1deinitialize(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1deinitialize(JNIEnv *jenv, jclass jcls) {
   (void)jenv;
   (void)jcls;
   enet_deinitialize();
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_set_1crc32(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_set_1crc32(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetHost *arg1 = (ENetHost *) 0 ;
   
   (void)jenv;
@@ -8538,7 +8538,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_set_1crc32(JNIEnv *jenv, jclass jcls, 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1linked_1version(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1linked_1version(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   ENetVersion result;
   
@@ -8550,7 +8550,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1linked_1version(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1time_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1time_1get(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   enet_uint32 result;
   
@@ -8562,7 +8562,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1time_1get(JNIEnv *jenv, jclass 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1time_1set(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1time_1set(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   enet_uint32 arg1 ;
   
   (void)jenv;
@@ -8572,7 +8572,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1time_1set(JNIEnv *jenv, jclass j
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1create(JNIEnv *jenv, jclass jcls, jint jarg1) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1create(JNIEnv *jenv, jclass jcls, jint jarg1) {
   jint jresult = 0 ;
   ENetSocketType arg1 ;
   ENetSocket result;
@@ -8586,7 +8586,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1create(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1bind(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1bind(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
@@ -8603,7 +8603,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1bind(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1get_1address(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1get_1address(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
@@ -8620,7 +8620,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1get_1address(JNIEnv *jen
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1listen(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1listen(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   int arg2 ;
@@ -8636,7 +8636,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1listen(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1accept(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1accept(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
@@ -8653,7 +8653,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1accept(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1connect(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1connect(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
@@ -8670,7 +8670,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1connect(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1send(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_, jlong jarg3, jobject jarg3_, jlong jarg4) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1send(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_, jlong jarg3, jobject jarg3_, jlong jarg4) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
@@ -8692,7 +8692,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1send(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1receive(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_, jlong jarg3, jobject jarg3_, jlong jarg4) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1receive(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_, jlong jarg3, jobject jarg3_, jlong jarg4) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
@@ -8714,7 +8714,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1receive(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1wait(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1wait(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jlong jarg3) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   enet_uint32 *arg2 = (enet_uint32 *) 0 ;
@@ -8732,7 +8732,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1wait(JNIEnv *jenv, jclas
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1set_1option(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2, jint jarg3) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1set_1option(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2, jint jarg3) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetSocketOption arg2 ;
@@ -8750,7 +8750,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1set_1option(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1get_1option(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2, jlong jarg3) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1get_1option(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2, jlong jarg3) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetSocketOption arg2 ;
@@ -8768,7 +8768,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1get_1option(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1shutdown(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socket_1shutdown(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetSocketShutdown arg2 ;
@@ -8784,7 +8784,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socket_1shutdown(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1socket_1destroy(JNIEnv *jenv, jclass jcls, jint jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1socket_1destroy(JNIEnv *jenv, jclass jcls, jint jarg1) {
   ENetSocket arg1 ;
   
   (void)jenv;
@@ -8794,7 +8794,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1socket_1destroy(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socketset_1select(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jlong jarg3, jlong jarg4) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1socketset_1select(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jlong jarg3, jlong jarg4) {
   jint jresult = 0 ;
   ENetSocket arg1 ;
   ENetSocketSet *arg2 = (ENetSocketSet *) 0 ;
@@ -8814,7 +8814,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1socketset_1select(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1address_1set_1host_1ip(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1address_1set_1host_1ip(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2) {
   jint jresult = 0 ;
   ENetAddress *arg1 = (ENetAddress *) 0 ;
   char *arg2 = (char *) 0 ;
@@ -8836,7 +8836,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1address_1set_1host_1ip(JNIEnv *j
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1address_1set_1host(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1address_1set_1host(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2) {
   jint jresult = 0 ;
   ENetAddress *arg1 = (ENetAddress *) 0 ;
   char *arg2 = (char *) 0 ;
@@ -8858,7 +8858,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1address_1set_1host(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1address_1get_1host_1ip(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2, jlong jarg3) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1address_1get_1host_1ip(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2, jlong jarg3) {
   jint jresult = 0 ;
   ENetAddress *arg1 = (ENetAddress *) 0 ;
   char *arg2 = (char *) 0 ;
@@ -8882,7 +8882,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1address_1get_1host_1ip(JNIEnv *j
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1address_1get_1host(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2, jlong jarg3) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1address_1get_1host(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2, jlong jarg3) {
   jint jresult = 0 ;
   ENetAddress *arg1 = (ENetAddress *) 0 ;
   char *arg2 = (char *) 0 ;
@@ -8906,7 +8906,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1address_1get_1host(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1packet_1create(JNIEnv *jenv, jclass jcls, jbyteArray jarg1, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1packet_1create(JNIEnv *jenv, jclass jcls, jbyteArray jarg1, jlong jarg3) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   size_t arg2 ;
@@ -8935,7 +8935,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1packet_1create(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1packet_1destroy(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1packet_1destroy(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetPacket *arg1 = (ENetPacket *) 0 ;
   
   (void)jenv;
@@ -8946,7 +8946,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1packet_1destroy(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1packet_1resize(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1packet_1resize(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jint jresult = 0 ;
   ENetPacket *arg1 = (ENetPacket *) 0 ;
   size_t arg2 ;
@@ -8963,7 +8963,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1packet_1resize(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1crc32(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1crc32(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   ENetBuffer *arg1 = (ENetBuffer *) 0 ;
   size_t arg2 ;
@@ -8980,7 +8980,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1crc32(JNIEnv *jenv, jclass jcls
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1host_1create(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1host_1create(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5) {
   jlong jresult = 0 ;
   ENetAddress *arg1 = (ENetAddress *) 0 ;
   size_t arg2 ;
@@ -9003,7 +9003,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1host_1create(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1destroy(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1host_1destroy(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetHost *arg1 = (ENetHost *) 0 ;
   
   (void)jenv;
@@ -9014,7 +9014,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1destroy(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1host_1connect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1host_1connect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4) {
   jlong jresult = 0 ;
   ENetHost *arg1 = (ENetHost *) 0 ;
   ENetAddress *arg2 = (ENetAddress *) 0 ;
@@ -9036,7 +9036,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1host_1connect(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1host_1check_1events(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1host_1check_1events(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   jint jresult = 0 ;
   ENetHost *arg1 = (ENetHost *) 0 ;
   ENetEvent *arg2 = (ENetEvent *) 0 ;
@@ -9054,7 +9054,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1host_1check_1events(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1host_1service(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1host_1service(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3) {
   jint jresult = 0 ;
   ENetHost *arg1 = (ENetHost *) 0 ;
   ENetEvent *arg2 = (ENetEvent *) 0 ;
@@ -9074,7 +9074,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1host_1service(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1flush(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1host_1flush(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetHost *arg1 = (ENetHost *) 0 ;
   
   (void)jenv;
@@ -9085,7 +9085,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1flush(JNIEnv *jenv, jclass
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1broadcast(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2, jlong jarg3, jobject jarg3_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1host_1broadcast(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2, jlong jarg3, jobject jarg3_) {
   ENetHost *arg1 = (ENetHost *) 0 ;
   enet_uint8 arg2 ;
   ENetPacket *arg3 = (ENetPacket *) 0 ;
@@ -9101,7 +9101,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1broadcast(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1compress(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1host_1compress(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   ENetHost *arg1 = (ENetHost *) 0 ;
   ENetCompressor *arg2 = (ENetCompressor *) 0 ;
   
@@ -9115,7 +9115,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1compress(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1host_1compress_1with_1range_1coder(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1host_1compress_1with_1range_1coder(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   ENetHost *arg1 = (ENetHost *) 0 ;
   int result;
@@ -9130,7 +9130,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1host_1compress_1with_1range_1cod
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1channel_1limit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1host_1channel_1limit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   ENetHost *arg1 = (ENetHost *) 0 ;
   size_t arg2 ;
   
@@ -9143,7 +9143,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1channel_1limit(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1bandwidth_1limit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1host_1bandwidth_1limit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
   ENetHost *arg1 = (ENetHost *) 0 ;
   enet_uint32 arg2 ;
   enet_uint32 arg3 ;
@@ -9158,7 +9158,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1bandwidth_1limit(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1bandwidth_1throttle(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1host_1bandwidth_1throttle(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetHost *arg1 = (ENetHost *) 0 ;
   
   (void)jenv;
@@ -9169,7 +9169,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1host_1bandwidth_1throttle(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1host_1random_1seed(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1host_1random_1seed(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   enet_uint32 result;
   
@@ -9181,7 +9181,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1host_1random_1seed(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1peer_1send(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2, jlong jarg3, jobject jarg3_) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1peer_1send(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jshort jarg2, jlong jarg3, jobject jarg3_) {
   jint jresult = 0 ;
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   enet_uint8 arg2 ;
@@ -9201,7 +9201,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1peer_1send(JNIEnv *jenv, jclass 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1peer_1receive(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1peer_1receive(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   enet_uint8 *arg2 = (enet_uint8 *) 0 ;
@@ -9218,7 +9218,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1peer_1receive(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1ping(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1ping(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   
   (void)jenv;
@@ -9229,7 +9229,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1ping(JNIEnv *jenv, jclass 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1ping_1interval(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1ping_1interval(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -9242,7 +9242,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1ping_1interval(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1timeout(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3, jlong jarg4) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1timeout(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3, jlong jarg4) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   enet_uint32 arg3 ;
@@ -9259,7 +9259,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1timeout(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1reset(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1reset(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   
   (void)jenv;
@@ -9270,7 +9270,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1reset(JNIEnv *jenv, jclass
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1disconnect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1disconnect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -9283,7 +9283,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1disconnect(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1disconnect_1now(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1disconnect_1now(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -9296,7 +9296,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1disconnect_1now(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1disconnect_1later(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1disconnect_1later(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   
@@ -9309,7 +9309,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1disconnect_1later(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1throttle_1configure(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3, jlong jarg4) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1throttle_1configure(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3, jlong jarg4) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   enet_uint32 arg2 ;
   enet_uint32 arg3 ;
@@ -9326,7 +9326,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1throttle_1configure(JNIEnv
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1peer_1throttle(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_enet_1peer_1throttle(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jint jresult = 0 ;
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   enet_uint32 arg2 ;
@@ -9343,7 +9343,7 @@ SWIGEXPORT jint JNICALL Java_ENet_enetJNI_enet_1peer_1throttle(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1reset_1queues(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1reset_1queues(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   
   (void)jenv;
@@ -9354,7 +9354,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1reset_1queues(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1setup_1outgoing_1command(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1setup_1outgoing_1command(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   ENetOutgoingCommand *arg2 = (ENetOutgoingCommand *) 0 ;
   
@@ -9368,7 +9368,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1setup_1outgoing_1command(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1peer_1queue_1outgoing_1command(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3, jobject jarg3_, jlong jarg4, jint jarg5) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1peer_1queue_1outgoing_1command(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3, jobject jarg3_, jlong jarg4, jint jarg5) {
   jlong jresult = 0 ;
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   ENetProtocol *arg2 = (ENetProtocol *) 0 ;
@@ -9393,7 +9393,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1peer_1queue_1outgoing_1command(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1peer_1queue_1incoming_1command(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jbyteArray jarg3, jlong jarg5, jlong jarg6) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1peer_1queue_1incoming_1command(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jbyteArray jarg3, jlong jarg5, jlong jarg6) {
   jlong jresult = 0 ;
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   ENetProtocol *arg2 = (ENetProtocol *) 0 ;
@@ -9430,7 +9430,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1peer_1queue_1incoming_1command(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1peer_1queue_1acknowledgement(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jint jarg3) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1peer_1queue_1acknowledgement(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jint jarg3) {
   jlong jresult = 0 ;
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   ENetProtocol *arg2 = (ENetProtocol *) 0 ;
@@ -9450,7 +9450,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1peer_1queue_1acknowledgement(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1dispatch_1incoming_1unreliable_1commands(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1dispatch_1incoming_1unreliable_1commands(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   ENetChannel *arg2 = (ENetChannel *) 0 ;
   
@@ -9464,7 +9464,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1dispatch_1incoming_1unreli
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1dispatch_1incoming_1reliable_1commands(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1dispatch_1incoming_1reliable_1commands(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   ENetChannel *arg2 = (ENetChannel *) 0 ;
   
@@ -9478,7 +9478,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1dispatch_1incoming_1reliab
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1on_1connect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1on_1connect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   
   (void)jenv;
@@ -9489,7 +9489,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1on_1connect(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1on_1disconnect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1peer_1on_1disconnect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   ENetPeer *arg1 = (ENetPeer *) 0 ;
   
   (void)jenv;
@@ -9500,7 +9500,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1peer_1on_1disconnect(JNIEnv *jen
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1range_1coder_1create(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1range_1coder_1create(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   void *result = 0 ;
   
@@ -9512,7 +9512,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1range_1coder_1create(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1range_1coder_1destroy(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_ENetJava_enetJNI_enet_1range_1coder_1destroy(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -9522,7 +9522,7 @@ SWIGEXPORT void JNICALL Java_ENet_enetJNI_enet_1range_1coder_1destroy(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1range_1coder_1compress(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4, jlong jarg5, jlong jarg6) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1range_1coder_1compress(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4, jlong jarg5, jlong jarg6) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   ENetBuffer *arg2 = (ENetBuffer *) 0 ;
@@ -9547,7 +9547,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1range_1coder_1compress(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1range_1coder_1decompress(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1range_1coder_1decompress(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   enet_uint8 *arg2 = (enet_uint8 *) 0 ;
@@ -9569,7 +9569,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1range_1coder_1decompress(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1protocol_1command_1size(JNIEnv *jenv, jclass jcls, jshort jarg1) {
+SWIGEXPORT jlong JNICALL Java_ENetJava_enetJNI_enet_1protocol_1command_1size(JNIEnv *jenv, jclass jcls, jshort jarg1) {
   jlong jresult = 0 ;
   enet_uint8 arg1 ;
   size_t result;
@@ -9583,7 +9583,7 @@ SWIGEXPORT jlong JNICALL Java_ENet_enetJNI_enet_1protocol_1command_1size(JNIEnv 
 }
 
 
-SWIGEXPORT jint JNICALL Java_ENet_enetJNI_ENET_1TIME_1OVERFLOW_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_ENetJava_enetJNI_ENET_1TIME_1OVERFLOW_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   

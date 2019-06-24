@@ -1,18 +1,18 @@
-import ENet.enet;
-import ENet.ENetHost;
-import ENet.ENetEvent;
-import ENet.ENetAddress;
-import ENet.ENetEventType;
-import ENet.ENetPacket;
-import ENet.ENetPacketFlag;
-import ENet.ENetBuffer;
+import ENetJava.enet;
+import ENetJava.ENetHost;
+import ENetJava.ENetEvent;
+import ENetJava.ENetAddress;
+import ENetJava.ENetEventType;
+import ENetJava.ENetPacket;
+import ENetJava.ENetPacketFlag;
+import ENetJava.ENetBuffer;
 import java.nio.file.Paths;
 
 public class Server { 
 
 	public static void main(String[] args) {
 		try {
-    		System.load(Paths.get("").toAbsolutePath().toString() + "/libenet.so");
+    		System.load("/home/coldchip/gtserver/libenet.so");
     		enet en = new enet();
     		ENetEvent event = new ENetEvent();
     		ENetAddress address = new ENetAddress();
