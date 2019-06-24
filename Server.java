@@ -1,3 +1,9 @@
+/*
+
+	@copyright: ColdChip
+
+*/
+
 import ENetJava.enet;
 import ENetJava.ENetHost;
 import ENetJava.ENetEvent;
