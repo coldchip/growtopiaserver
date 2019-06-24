@@ -11,6 +11,7 @@ import java.nio.file.Paths;
 public class Server { 
 
 	public static void main(String[] args) {
+		System.out.println("\r\n\r\n\r\n\r\n\033[32m[Thread] \033[30m\033[42mGrowtopia Server Started\033[0m\r\n\r\n");
 		try {
     		System.load(Paths.get("").toAbsolutePath().toString() + "/Lib/libenet.so");
     		enet en = new enet();

@@ -23,4 +23,9 @@ module:
 	$(JNI_COMPILER) -shared ENetJNIToolChain/enet/*.lo ENetJNIToolChain/enet_wrap.o -o Lib/libenet.so
 	rm -r ENetJNIToolChain/enet/*.lo
 	$(JAVA_COMPILER) Server.java
+	jar -cvfe Build/server.jar Server *
+
+	echo "Running Build/server.jar"
+
+	java -jar Build/server.jar
 	
