@@ -1,11 +1,11 @@
-import Enet.enet;
-import Enet.ENetHost;
-import Enet.ENetEvent;
-import Enet.ENetAddress;
-import Enet.ENetEventType;
-import Enet.ENetPacket;
-import Enet.ENetPacketFlag;
-import Enet.ENetBuffer;
+import ENet.enet;
+import ENet.ENetHost;
+import ENet.ENetEvent;
+import ENet.ENetAddress;
+import ENet.ENetEventType;
+import ENet.ENetPacket;
+import ENet.ENetPacketFlag;
+import ENet.ENetBuffer;
 import java.nio.file.Paths;
 
 public class Server { 

@@ -7,7 +7,7 @@ SWIG_COMPILER=swig
 DISPLAY_TEXT=Compiling Files
 
 module:
-	# $(SWIG_COMPILER) -java -outdir Enet -package Enet native_enet/enet.i
+	# $(SWIG_COMPILER) -java -outdir ENet -package Enet native_enet/enet.i
 	# ^^ PLEASE DO NOT UNCOMMENT THE TOP LINE ^^ 
 	$(JNI_COMPILER) -c native_enet/enet/unix.c -fPIC -DHAS_SOCKLEN_T=1 -o native_enet/enet/unix.lo
 	$(JNI_COMPILER) -c native_enet/enet/win32.c -fPIC -o native_enet/enet/win32.lo
