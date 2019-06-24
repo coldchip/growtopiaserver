@@ -12,7 +12,7 @@ public class Server {
 
 	public static void main(String[] args) {
 		try {
-    		System.load("/home/coldchip/gtserver/libenet.so");
+    		System.load(Paths.get("").toAbsolutePath().toString() + "/Lib/libenet.so");
     		enet en = new enet();
     		ENetEvent event = new ENetEvent();
     		ENetAddress address = new ENetAddress();

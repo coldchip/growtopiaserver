@@ -20,7 +20,7 @@ module:
 	$(JNI_COMPILER) -c ENetJNIToolChain/enet/callbacks.c -fPIC -o ENetJNIToolChain/enet/callbacks.lo
 
 	$(JNI_COMPILER) -c ENetJNIToolChain/enet_wrap.c -o ENetJNIToolChain/enet_wrap.o
-	$(JNI_COMPILER) -shared ENetJNIToolChain/enet/*.lo ENetJNIToolChain/enet_wrap.o -o libenet.so
+	$(JNI_COMPILER) -shared ENetJNIToolChain/enet/*.lo ENetJNIToolChain/enet_wrap.o -o Lib/libenet.so
 	rm -r ENetJNIToolChain/enet/*.lo
 	$(JAVA_COMPILER) Server.java
 	
