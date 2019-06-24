@@ -16,7 +16,9 @@ Navigate to the downloaded folder directory.
 
 To build `$ make`
 
-To run `$ java Server`
+It will compile a JAR executable in `Build`
+
+To run `$ java -jar Build/server.jar`
 
 Requirements
 ------------
