@@ -6,12 +6,13 @@ import Enet.ENetEventType;
 import Enet.ENetPacket;
 import Enet.ENetPacketFlag;
 import Enet.ENetBuffer;
+import java.nio.file.Paths;
 
 public class Server { 
 
 	public static void main(String[] args) {
 		try {
-    		System.load("/home/coldchip/gtserver/libenet.so");
+    		System.load(Paths.get("").toAbsolutePath().toString() + "/libenet.so");
     		enet en = new enet();
     		ENetEvent event = new ENetEvent();
     		ENetAddress address = new ENetAddress();
