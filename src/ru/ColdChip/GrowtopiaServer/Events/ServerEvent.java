@@ -28,7 +28,6 @@ public class ServerEvent {
 				{	
 					Unpack unpack = new Unpack();
 					String textData = unpack.UnpackTextPacket(data);
-					System.out.println(textData);
 					Vectorize vector = new Vectorize(textData);
 					if(vector.containsKey("tankIDName") && vector.containsKey("tankIDPass")) {
 						if(vector.get("tankIDName").equals("a") && vector.get("tankIDName").equals("a")) {
@@ -36,7 +35,7 @@ public class ServerEvent {
 							PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`2Login Successful"));
 							Sender sender = new Sender();
 							sender.Send(peer, sendData.data);
-							PacketData loginPacket = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.AppendString(pack.AppendString(pack.AppendInt(pack.AppendString(pack.CreatePacket(), "OnSuperMainStartAcceptLogonHrdxs47254722215a"), 1742202771), "ubistatic-a.akamaihd.net"), "0098/CDNContent3/cache/"), "lol.com"), "proto=42|choosemusic=audio/mp3/tsirdc.mp3|active_holiday=0|"));
+							PacketData loginPacket = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.AppendString(pack.AppendString(pack.AppendInt(pack.AppendString(pack.CreatePacket(), "OnSuperMainStartAcceptLogonHrdxs47254722215a"), 1742202771), "ubistatic-a.akamaihd.net"), "0098/CDNContent3/cache/"), "lol.com"), "proto=42|choosemusic=audio/mp3/about_theme.mp3|active_holiday=0|"));
 							sender.Send(peer, loginPacket.data);
 						} else {
 							Pack pack = new Pack();
@@ -82,9 +81,13 @@ public class ServerEvent {
 							case "join_request":
 							{
 								GetWorldData worldUtils = new GetWorldData();
-								PacketData worldData = worldUtils.GetWorld("jebem");
+								PacketData worldData = worldUtils.GetWorld("lol");
 								Sender sender = new Sender();
 								sender.Send(peer, worldData.data);
+
+								Pack pack = new Pack();
+								PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|0\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|1498\nname|``CykaBlyad``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
+								sender.Send(peer, spawnData.data);
 							}
 							break;
 							default:
