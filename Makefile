@@ -7,7 +7,7 @@ SWIG_COMPILER=swig
 DISPLAY_TEXT=Compiling Files
 
 module:
-	# $(SWIG_COMPILER) -java -outdir ENetJava -package ENetJava ENetJNIToolChain/enet.i
+	# $(SWIG_COMPILER) -java -outdir src/ru/ColdChip/GrowtopiaServer/ENetJava -package ru.ColdChip.GrowtopiaServer.ENetJava ENetJNIToolChain/enet.i
 	# ^^ PLEASE DO NOT UNCOMMENT THE TOP LINE ^^ 
 	$(JNI_COMPILER) -c ENetJNIToolChain/enet/unix.c -fPIC -DHAS_SOCKLEN_T=1 -o ENetJNIToolChain/enet/unix.lo
 	$(JNI_COMPILER) -c ENetJNIToolChain/enet/win32.c -fPIC -o ENetJNIToolChain/enet/win32.lo
@@ -22,6 +22,6 @@ module:
 	$(JNI_COMPILER) -c ENetJNIToolChain/enet_wrap.c -o ENetJNIToolChain/enet_wrap.o
 	$(JNI_COMPILER) -shared ENetJNIToolChain/enet/*.lo ENetJNIToolChain/enet_wrap.o -o Lib/libenet.so
 	rm -r ENetJNIToolChain/enet/*.lo
-	$(JAVA_COMPILER) Server.java
-	jar -cvfe Build/server.jar Server *
+	$(JAVA_COMPILER) -sourcepath src src/ru/ColdChip/GrowtopiaServer/Server.java
+	cd src && jar -cvfe ../Build/server.jar ru.ColdChip.GrowtopiaServer.Server ru/ColdChip/GrowtopiaServer/*
 	
