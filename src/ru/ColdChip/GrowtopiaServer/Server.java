@@ -40,7 +40,7 @@ public class Server {
     		ServerEvent serverEvent = new ServerEvent();
 
     		while(true) {
-				if(en.Service(host.host, host.event, 100) > 0) {
+				if(en.Service(host.host, host.event, 10) > 0) {
 					ENetEventType type = host.event.getType();
 					host.peer = host.event.getPeer();
 					if(type == ENetEventType.ENET_EVENT_TYPE_CONNECT) {

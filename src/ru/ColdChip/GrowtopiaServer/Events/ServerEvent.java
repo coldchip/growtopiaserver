@@ -47,18 +47,32 @@ public class ServerEvent {
 						if(vector.containsKey("action")) {
 							switch(vector.get("action")) {
 								case "refresh_item_data":
-									PacketData itemsDat = SaveDatPacket();
-									Sender sender = new Sender();
-									sender.Send(peer, itemsDat.data);
+									{
+										PacketData itemsDat = SaveDatPacket();
+										Sender sender = new Sender();
+										sender.Send(peer, itemsDat.data);
+									}
 								break;
 								case "enter_game":
-									Pack pack = new Pack();
-									PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnRequestWorldSelectMenu"), "default|LOL\nadd_button|Showing: `wWorlds``|_catselect_|0.6|3529161471|\nadd_floater|LOL|0|0.55|3529161471\n"));
-									Sender sendss = new Sender();
-									sendss.Send(peer, sendData.data);
+									{
+										{
+											Pack pack = new Pack();
+											PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnRequestWorldSelectMenu"), "default|LOL\nadd_button|Showing: `wWorlds``|_catselect_|0.6|3529161471|\nadd_floater|LOL|0|0.55|3529161471\n"));
+											Sender sender = new Sender();
+											sender.Send(peer, sendData.data);
+										}
+										{
+											Pack pack = new Pack();
+											PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`2Welcome Back!"));
+											Sender sender = new Sender();
+											sender.Send(peer, sendData.data);
+										}
+									}
 								break;
 								default:
-									System.out.println(vector.get("action"));
+									{
+										System.out.println(vector.get("action"));
+									}
 								break;
 							}
 						} else {
@@ -100,7 +114,14 @@ public class ServerEvent {
 				}
 			break;
 			case 4:
-				System.out.println("event 4");
+				{
+					System.out.println("event 4");
+				}
+			break;
+			default:
+				{
+					
+				}
 			break;
 		}
 	}
