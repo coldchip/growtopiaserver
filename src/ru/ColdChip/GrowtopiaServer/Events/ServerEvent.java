@@ -53,6 +53,14 @@ public class ServerEvent {
 										sender.Send(peer, itemsDat.data);
 									}
 								break;
+								case "helpmenu":
+									{
+										Pack pack = new Pack();
+										PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnDialogRequest"), "set_default_color|`o\n\nadd_label_with_icon|big|`2Growtopia Server - Java Edition ``|left|1796|\n\nadd_spacer|small|\nadd_label_with_icon|small|`4SERVER`o:`2Growtopia Server - Java Edition`o was made by `9ColdChip`o and everyone that contributed on `9Github`o!|eft|5016|\nadd_label_with_icon|small| |left|6746|\nadd_label_with_icon|small|`4REMINDER`o: This server is under development and may be buggy please report issues on github.|left|1432|\nadd_label_with_icon|small|  |left|6746|\nadd_label_with_icon|small||\n\nadd_url_button|``GitHub: `1Here you can report any issues you have!``|`1Github Page|https://github.com/coldchip/growtopiaserver|Open link?|0|0|\nadd_url_button|||small|\nadd_textbox| |small||small|\nadd_textbox|~`2The Dev Team|small||small|\nadd_textbox|Version 0.001|small|\nadd_quick_exit|\nadd_button|chc0|Close|noflags|0|0|\nnend_dialog|gazette||OK|"));
+										Sender sender = new Sender();
+										sender.Send(peer, sendData.data);
+									}
+								break;
 								case "enter_game":
 									{
 										{
@@ -64,6 +72,12 @@ public class ServerEvent {
 										{
 											Pack pack = new Pack();
 											PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`2Welcome Back!"));
+											Sender sender = new Sender();
+											sender.Send(peer, sendData.data);
+										}
+										{
+											Pack pack = new Pack();
+											PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnDialogRequest"), "set_default_color|`o\n\nadd_label_with_icon|big|`2Growtopia Server - Java Edition ``|left|1796|\n\nadd_spacer|small|\nadd_label_with_icon|small|`4SERVER`o:`2Growtopia Server - Java Edition`o was made by `9ColdChip`o and everyone that contributed on `9Github`o!|eft|5016|\nadd_label_with_icon|small| |left|6746|\nadd_label_with_icon|small|`4REMINDER`o: This server is under development and may be buggy please report issues on github.|left|1432|\nadd_label_with_icon|small|  |left|6746|\nadd_label_with_icon|small||\n\nadd_url_button|``GitHub: `1Here you can report any issues you have!``|`1Github Page|https://github.com/coldchip/growtopiaserver|Open link?|0|0|\nadd_url_button|||small|\nadd_textbox| |small||small|\nadd_textbox|~`2The Dev Team|small||small|\nadd_textbox|Version 0.001|small|\nadd_quick_exit|\nadd_button|chc0|Close|noflags|0|0|\nnend_dialog|gazette||OK|"));
 											Sender sender = new Sender();
 											sender.Send(peer, sendData.data);
 										}
