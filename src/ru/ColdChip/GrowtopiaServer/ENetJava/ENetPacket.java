@@ -55,9 +55,8 @@ public class ENetPacket {
     enetJNI.ENetPacket_data_set(swigCPtr, this, SWIGTYPE_p_unsigned_char.getCPtr(value));
   }
 
-  public SWIGTYPE_p_unsigned_char getData() {
-    long cPtr = enetJNI.ENetPacket_data_get(swigCPtr, this);
-    return (cPtr == 0) ? null : new SWIGTYPE_p_unsigned_char(cPtr, false);
+  public byte[] getData() {
+    return enetJNI.ENetPacket_data_get(swigCPtr, this);
   }
 
   public void setDataLength(long value) {

@@ -285,7 +285,7 @@ public class enetJNI {
   public final static native void ENetPacket_flags_set(long jarg1, ENetPacket jarg1_, long jarg2);
   public final static native long ENetPacket_flags_get(long jarg1, ENetPacket jarg1_);
   public final static native void ENetPacket_data_set(long jarg1, ENetPacket jarg1_, long jarg2);
-  public final static native long ENetPacket_data_get(long jarg1, ENetPacket jarg1_);
+  public final static native byte[] ENetPacket_data_get(long jarg1, ENetPacket jarg1_);
   public final static native void ENetPacket_dataLength_set(long jarg1, ENetPacket jarg1_, long jarg2);
   public final static native long ENetPacket_dataLength_get(long jarg1, ENetPacket jarg1_);
   public final static native void ENetPacket_freeCallback_set(long jarg1, ENetPacket jarg1_, long jarg2);
