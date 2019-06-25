@@ -5,6 +5,7 @@ import ru.ColdChip.GrowtopiaServer.Packet.Sender;
 import ru.ColdChip.GrowtopiaServer.Packet.Unpack;
 import ru.ColdChip.GrowtopiaServer.Packet.Pack;
 import ru.ColdChip.GrowtopiaServer.Packet.Structs.*;
+import ru.ColdChip.GrowtopiaServer.Utils.*;
 
 public class ServerEvent {
 	public void OnConnect(ENetPeer peer) {
@@ -19,11 +20,26 @@ public class ServerEvent {
 		switch(type) {
 			case 2:
 				Unpack unpack = new Unpack();
-				String a = unpack.UnpackTextPacket(data);
-				Pack pack = new Pack();
-				PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`4Invalid Password"));
-				Sender sender = new Sender();
-				sender.Send(peer, sendData.data);
+				String textData = unpack.UnpackTextPacket(data);
+				Vectorize vector = new Vectorize(textData);
+				if(vector.containsKey("tankIDName") && vector.containsKey("tankIDPass")) {
+					if(vector.get("tankIDName").equals("a") && vector.get("tankIDName").equals("a")) {
+						Pack pack = new Pack();
+						PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`2Login Successful"));
+						Sender sender = new Sender();
+						sender.Send(peer, sendData.data);
+					} else {
+						Pack pack = new Pack();
+						PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`4Invalid Password"));
+						Sender sender = new Sender();
+						sender.Send(peer, sendData.data);
+					}
+				} else {
+					Pack pack = new Pack();
+					PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`4Invalid Password"));
+					Sender sender = new Sender();
+					sender.Send(peer, sendData.data);
+				}
 			break;
 			case 3:
 
