@@ -86,7 +86,7 @@ public class ServerEvent {
 								sender.Send(peer, worldData.data);
 
 								Pack pack = new Pack();
-								PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|0\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|1498\nname|``CykaBlyad``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
+								PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|0\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``CykaBlyad``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
 								sender.Send(peer, spawnData.data);
 							}
 							break;

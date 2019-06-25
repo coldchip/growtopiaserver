@@ -26,6 +26,11 @@ public class GetWorldData {
 		for(int i = 0; i < square * 8; i+=8) {
 			System.arraycopy(Short2Byte(block), 0, data, headerData.length + 2 + name.length() + 4 + 4 + 4 + i, 2);
 			int type = 0;
+			if(square - i <= 700) {
+				block = 8;
+			} else {
+				block = 0;
+			}
 			type |= 0;
 			System.arraycopy(Int2Byte(type), 0, data, headerData.length + 2 + name.length() + 4 + 4 + 4 + i + 4, 4);
 		}
