@@ -5,39 +5,36 @@ import ru.ColdChip.GrowtopiaServer.Packet.Structs.PacketData;
 
 public class Pack {
 	public PacketData CreatePacket() {
-		byte[] data = new byte[61];
-
-		PacketData packet = new PacketData();
-		packet.data = Hex2Byte(Constants.PacketHeader);
-		System.out.println(new String(packet.data).length());
-		packet.length = 61;
-		packet.indexes = 0;
-		return packet;
+		PacketData data = new PacketData();
+		data.data = Hex2Byte(Constants.PacketHeader);
+		data.index = 0;
+		return data;
 	}
 
-	public PacketData AppendString(PacketData p, String str) {
-		byte[] n = new byte[p.length + 2 + str.length() + 4];
-		System.arraycopy(n, 0, p.data, 0, p.length);
-		p.data = n;
-		p.data[p.length] = (byte)p.indexes;
-		p.data[p.length + 1] = 2;
-		int sLen = str.length();
-		System.arraycopy(p.data, p.length + 2, toBytes(sLen), 0, 4);
-		System.arraycopy(p.data, p.length + 6, str.getBytes(), 0, sLen);
-		p.length = p.length + 2 + str.length() + 4;
-		p.indexes++;
+	public PacketData AppendString(PacketData p, String string) {
+		int stringLen = string.length();
+		byte[] data = new byte[p.data.length + stringLen + 6];
+		int type = 2;
+		int i = p.index++;
+		System.arraycopy(p.data, 0, data, 0, p.data.length);
+		//System.arraycopy(p.data, 0, data.data, 0, p.data.length);
+		data[p.data.length] = (byte)i;
+		data[p.data.length + 1] = (byte)type;
+		System.arraycopy(toBytes(stringLen), 0, data, p.data.length + 2, 4);
+		p.data = data;
+		p.index = i;
 		return p;
 	}
 
 	public PacketData PacketEnd(PacketData p) {
 		byte[] n = new byte[p.length + 1];
-		System.arraycopy(n, 0, p.data, 0, p.length);
+		System.arraycopy(n, 0, p.data, 0, 1);
 		p.data = n;
 		byte zero = 0;
 		p.data[p.length] = zero;
 		p.length += 1;
-		System.arraycopy(p.data, 56, toBytes(p.indexes), 0, 4);
-		System.arraycopy(p.data, 60, toBytes(p.indexes), 0, 4);
+		System.arraycopy(toBytes(p.index), 0, p.data, 56, 4);
+		System.arraycopy(toBytes(p.index), 0, p.data, 60, 4);
 		return p;
 	}
 
