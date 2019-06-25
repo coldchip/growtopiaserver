@@ -53,7 +53,7 @@ public class enet implements enetConstants {
     enetJNI.enet_deinitialize();
   }
 
-  public static void set_crc32(ENetHost host) {
+  public static void SetCRC32(ENetHost host) {
     enetJNI.set_crc32(ENetHost.getCPtr(host), host);
   }
 
@@ -125,7 +125,7 @@ public class enet implements enetConstants {
     return enetJNI.enet_socketset_select(arg0, SWIGTYPE_p_fd_set.getCPtr(arg1), SWIGTYPE_p_fd_set.getCPtr(arg2), arg3);
   }
 
-  public static int enet_address_set_host_ip(ENetAddress address, String hostName) {
+  public static int SetHostIP(ENetAddress address, String hostName) {
     return enetJNI.enet_address_set_host_ip(ENetAddress.getCPtr(address), address, hostName);
   }
 
@@ -158,7 +158,7 @@ public class enet implements enetConstants {
     return enetJNI.enet_crc32(ENetBuffer.getCPtr(arg0), arg0, arg1);
   }
 
-  public static ENetHost enet_host_create(ENetAddress arg0, long arg1, long arg2, long arg3, long arg4) {
+  public static ENetHost CreateHost(ENetAddress arg0, long arg1, long arg2, long arg3, long arg4) {
     long cPtr = enetJNI.enet_host_create(ENetAddress.getCPtr(arg0), arg0, arg1, arg2, arg3, arg4);
     return (cPtr == 0) ? null : new ENetHost(cPtr, false);
   }
@@ -176,7 +176,7 @@ public class enet implements enetConstants {
     return enetJNI.enet_host_check_events(ENetHost.getCPtr(arg0), arg0, ENetEvent.getCPtr(arg1), arg1);
   }
 
-  public static int enet_host_service(ENetHost arg0, ENetEvent arg1, long arg2) {
+  public static int Service(ENetHost arg0, ENetEvent arg1, long arg2) {
     return enetJNI.enet_host_service(ENetHost.getCPtr(arg0), arg0, ENetEvent.getCPtr(arg1), arg1, arg2);
   }
 
@@ -192,7 +192,7 @@ public class enet implements enetConstants {
     enetJNI.enet_host_compress(ENetHost.getCPtr(arg0), arg0, ENetCompressor.getCPtr(arg1), arg1);
   }
 
-  public static int enet_host_compress_with_range_coder(ENetHost host) {
+  public static int RangeCoderCompress(ENetHost host) {
     return enetJNI.enet_host_compress_with_range_coder(ENetHost.getCPtr(host), host);
   }
 

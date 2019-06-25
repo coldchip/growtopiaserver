@@ -35,8 +35,9 @@ public class ENetAddress {
     }
   }
 
-  public void setHost(long value) {
-    enetJNI.ENetAddress_host_set(swigCPtr, this, value);
+  public void setHost(String hostName, int value) {
+    enetJNI.enet_address_set_host_ip(ENetAddress.getCPtr(this), this, hostName);
+    enetJNI.ENetAddress_port_set(swigCPtr, this, value);
   }
 
   public long getHost() {

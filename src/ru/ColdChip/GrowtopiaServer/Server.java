@@ -14,6 +14,10 @@ import ru.ColdChip.GrowtopiaServer.ENetJava.ENetEventType;
 import ru.ColdChip.GrowtopiaServer.ENetJava.ENetPacket;
 import ru.ColdChip.GrowtopiaServer.ENetJava.ENetPacketFlag;
 import ru.ColdChip.GrowtopiaServer.ENetJava.ENetBuffer;
+
+import ru.ColdChip.GrowtopiaServer.Structs.ServerHost;
+import ru.ColdChip.GrowtopiaServer.Events.ServerEvent;
+
 import java.nio.file.Paths;
 
 public class Server { 
@@ -23,21 +27,24 @@ public class Server {
 		try {
     		System.load(Paths.get("").toAbsolutePath().toString() + "/Lib/libenet.so");
     		enet en = new enet();
-    		ENetEvent event = new ENetEvent();
-    		ENetAddress address = new ENetAddress();
-    		en.enet_address_set_host_ip(address, "0.0.0.0");
-    		address.setPort(10003);
-    		ENetHost host = en.enet_host_create(address, 3200, 2, 0, 0);
-    		en.set_crc32(host);
-    		en.enet_host_compress_with_range_coder(host);
+    		ServerHost host = new ServerHost();
+    		host.event = new ENetEvent();
+
+    		host.address = new ENetAddress();
+    		host.address.setHost("0.0.0.0", 10003);
+
+    		host.host = en.CreateHost(host.address, 3200, 2, 0, 0);
+    		host.host.setCRC32();
+    		host.host.enableCompression();
+
+    		ServerEvent serverEvent = new ServerEvent();
+
     		while(true) {
-				if(en.enet_host_service(host, event, 100) > 0) {
-					ENetEventType type = event.getType();
+				if(en.Service(host.host, host.event, 100) > 0) {
+					ENetEventType type = host.event.getType();
+					host.peer = host.event.getPeer();
 					if(type == ENetEventType.ENET_EVENT_TYPE_CONNECT) {
-						System.out.println(event.getPeer());
-						byte[] connectByte = new byte[] {0x01, 0x00, 0x00, 0x00, 0x00};
-						ENetPacket packet = en.enet_packet_create(connectByte, ENetPacketFlag.ENET_PACKET_FLAG_RELIABLE);
-						en.enet_peer_send(event.getPeer(), (short)0, packet);
+						serverEvent.OnConnect(host.peer);
 					}
 					if(type == ENetEventType.ENET_EVENT_TYPE_RECEIVE) {
 

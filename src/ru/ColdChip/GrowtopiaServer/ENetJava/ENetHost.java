@@ -47,6 +47,14 @@ public class ENetHost {
     enetJNI.ENetHost_address_set(swigCPtr, this, ENetAddress.getCPtr(value), value);
   }
 
+  public void setCRC32() {
+    enetJNI.set_crc32(ENetHost.getCPtr(this), this);
+  }
+
+  public void enableCompression() {
+    enetJNI.enet_host_compress_with_range_coder(ENetHost.getCPtr(this), this);
+  }
+
   public ENetAddress getAddress() {
     long cPtr = enetJNI.ENetHost_address_get(swigCPtr, this);
     return (cPtr == 0) ? null : new ENetAddress(cPtr, false);
