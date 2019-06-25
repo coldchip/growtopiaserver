@@ -21,8 +21,7 @@ public class ServerEvent {
 				Unpack unpack = new Unpack();
 				String a = unpack.UnpackTextPacket(data);
 				Pack pack = new Pack();
-				PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "okoko"));
-				System.out.println(new String(sendData.data));
+				PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`4Invalid Password"));
 				Sender sender = new Sender();
 				sender.Send(peer, sendData.data);
 			break;
