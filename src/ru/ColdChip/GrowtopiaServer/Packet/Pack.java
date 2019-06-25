@@ -1,12 +1,14 @@
 package ru.ColdChip.GrowtopiaServer.Packet;
 
+import  ru.ColdChip.GrowtopiaServer.Utils.Hex2Byte;
 import ru.ColdChip.GrowtopiaServer.ENetJava.*;
 import ru.ColdChip.GrowtopiaServer.Packet.Structs.PacketData;
 
 public class Pack {
 	public PacketData CreatePacket() {
 		PacketData data = new PacketData();
-		data.data = Hex2Byte(Constants.PacketHeader);
+		Hex2Byte h2b = new Hex2Byte();
+		data.data = h2b.Compute(Constants.PacketHeader);
 		data.index = 0;
 		return data;
 	}
@@ -49,28 +51,6 @@ public class Pack {
 		System.arraycopy(finalIndex, 0, p.data, 60, 1);
 		return p;
 	}
-
-	private static byte[] Hex2Byte(String s) {
-	    int len = s.length();
-	    byte[] data = new byte[len / 2];
-	    for (int i = 0; i < len; i += 2) {
-	        data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4) + Character.digit(s.charAt(i+1), 16));
-	    }
-	    return data;
-	}
-
-	private static String Byte2Hex(byte[] hashInBytes) {
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < hashInBytes.length; i++) {
-            String hex = Integer.toHexString(0xff & hashInBytes[i]);
-            if (hex.length() == 1) sb.append('0');
-            sb.append(hex);
-        }
-        return sb.toString();
-
-    }
-
 
 	byte[] toBytes(int i) {
 		byte[] result = new byte[4];
