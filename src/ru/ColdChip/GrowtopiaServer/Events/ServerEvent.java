@@ -141,9 +141,9 @@ public class ServerEvent {
 	}
 
 	public void OnDisconnect(ENetPeer peer) {
-		byte[] connectByte = new byte[] {0x01, 0x00, 0x00, 0x00, 0x00};
-		Sender sender = new Sender();
-		sender.Send(peer, connectByte);
+		// byte[] connectByte = new byte[] {0x01, 0x00, 0x00, 0x00, 0x00};
+		// Sender sender = new Sender();
+		// sender.Send(peer, connectByte);
 	}
 
 	private PacketData SaveDatPacket() {
