@@ -8,19 +8,28 @@ import ru.ColdChip.GrowtopiaServer.Packet.Constants;
 import ru.ColdChip.GrowtopiaServer.Packet.Structs.*;
 import ru.ColdChip.GrowtopiaServer.Utils.*;
 import ru.ColdChip.GrowtopiaServer.World.*;
+import ru.ColdChip.GrowtopiaServer.Player.Structs.*;
 
+import java.util.*;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class ServerEvent {
+
+	private static HashMap<Long, PlayerData> playerData = new HashMap<Long, PlayerData>();
+
 	public void OnConnect(ENetPeer peer) {
 		byte[] connectByte = new byte[] {0x01, 0x00, 0x00, 0x00, 0x00};
 		Sender sender = new Sender();
 		sender.Send(peer, connectByte);
+
+		long connectionID = peer.getConnectID();
+		playerData.put(connectionID, new PlayerData());
 	}
 
 	public void OnReceive(ENetPeer peer, ENetPacket packet) {
+		PlayerData player = playerData.get(peer.getConnectID());
 		byte[] data = packet.getData();
 		int type = (int)data[0];
 		switch(type) {
@@ -114,13 +123,21 @@ public class ServerEvent {
 								sender.Send(peer, worldData.data);
 
 								Pack pack = new Pack();
-								PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|0\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``CykaBlyad``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
+								PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|0\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + player.username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
 								sender.Send(peer, spawnData.data);
+							}
+							break;
+							case "quit_to_exitt":
+							{
+								Pack pack = new Pack();
+								PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnRequestWorldSelectMenu"), "default|LOL\nadd_button|Showing: `wWorlds``|_catselect_|0.6|3529161471|\nadd_floater|LOL|0|0.55|3529161471\n"));
+								Sender sender = new Sender();
+								sender.Send(peer, sendData.data);
 							}
 							break;
 							default:
 							{
-
+								System.out.println(action);
 							}
 							break;
 						}
