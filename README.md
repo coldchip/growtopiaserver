@@ -18,7 +18,9 @@ To build `$ make`
 
 It will compile a JAR executable in `Build`
 
-To run `$ java -jar Build/server.jar`
+To run `$ make run`
+
+or `$ java -jar Build/server.jar`
 
 Requirements
 ------------
