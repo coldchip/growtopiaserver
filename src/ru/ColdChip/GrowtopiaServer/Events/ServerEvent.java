@@ -12,6 +12,7 @@ import ru.ColdChip.GrowtopiaServer.Player.Structs.*;
 import ru.ColdChip.GrowtopiaServer.Player.Movement.*;
 import ru.ColdChip.GrowtopiaServer.Player.Movement.Structs.*;
 import ru.ColdChip.GrowtopiaServer.Structs.ServerHost;
+import ru.ColdChip.GrowtopiaServer.Player.Inventory.Inventory;
 
 import java.util.*;
 import java.io.File;
@@ -149,14 +150,20 @@ public class ServerEvent {
 							{
 								playerData.get(myPointer).currentWorld = "ABC";
 
+								Sender sender = new Sender();
+
+								Inventory inv = new Inventory();
+								PacketData invData = inv.getInventory();
+								sender.Send(peer, invData.data);
+
 								GetWorldData worldUtils = new GetWorldData();
 								PacketData worldData = worldUtils.GetWorld("lol");
-								Sender sender = new Sender();
 								sender.Send(peer, worldData.data);
 
 								Pack pack = new Pack();
 								PacketData mySpawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(myPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + playerData.get(myPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
 								sender.Send(peer, mySpawnData.data);
+
 
 								for (Long playerPointer : playerData.keySet()) {
 									if(playerPointer != myPointer && playerData.get(playerPointer).currentWorld == "ABC") {
