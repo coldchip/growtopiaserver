@@ -12,7 +12,7 @@ public class Unpack {
 					((data[1] & 0xFF) << 8) & 255 | 
 					((data[2] & 0xFF) << 16 ) & 255 | 
 					((data[3] & 0xFF) << 24 ) & 255;
-		return new String(Arrays.copyOfRange(data, 4, data.length));
+		return new String(Arrays.copyOfRange(data, 4, (int)(packet.getDataLength() - 1)));
 	}
 
 	public static int getType(ENetPacket packet) {
@@ -27,6 +27,6 @@ public class Unpack {
 	public static byte[] unpackBinary(ENetPacket packet) {
 		byte[] data = packet.getData();
 		byte[] results = new byte[data.length - 4];
-		return Arrays.copyOfRange(data, 4, data.length);
+		return Arrays.copyOfRange(data, 4, (int)packet.getDataLength());
 	}
 }

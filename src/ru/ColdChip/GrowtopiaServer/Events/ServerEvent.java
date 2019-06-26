@@ -32,7 +32,7 @@ public class ServerEvent {
 		PlayerData pData = new PlayerData();
 		pData.netID = cid;
 		playerData.put(peer.getPointer(), pData);
-		cid++;
+		cid += 1;
 	}
 
 	public void OnReceive(ServerHost host) {
@@ -127,37 +127,46 @@ public class ServerEvent {
 						switch(action) {
 							case "join_request":
 							{
+								playerData.get(myPointer).currentWorld = "ABC";
+
 								GetWorldData worldUtils = new GetWorldData();
 								PacketData worldData = worldUtils.GetWorld("lol");
 								Sender sender = new Sender();
 								sender.Send(peer, worldData.data);
 
 								Pack pack = new Pack();
-								PacketData mySpawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(myPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + player.username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
+								PacketData mySpawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(myPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + playerData.get(myPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
 								sender.Send(peer, mySpawnData.data);
 
 								for (Long playerPointer : playerData.keySet()) {
-									if(playerPointer != myPointer) {
-										System.out.println(playerData.get(playerPointer).netID);
-										PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(playerPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + playerData.get(playerPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\n"));
+									if(playerPointer != myPointer && playerData.get(playerPointer).currentWorld == "ABC") {
+										PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(playerPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|" + playerData.get(playerPointer).x + "|" + playerData.get(playerPointer).y + "\nname|``" + playerData.get(playerPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\n"));
 										sender.Send(peer, spawnData.data);
 									}
 								}
-
 								for (Long playerPointer : playerData.keySet()) {
-									if(playerPointer != myPointer) {
+									if(playerPointer != myPointer && playerData.get(playerPointer).currentWorld == "ABC") {
 										ENetPeer playerX = new ENetPeer(playerPointer, true);
-										PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(playerPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + playerData.get(playerPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\n"));
+										PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(myPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|" + playerData.get(myPointer).x + "|" + playerData.get(myPointer).y + "\nname|``" + playerData.get(myPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\n"));
 										sender.Send(playerX, spawnData.data);
 									}
 								}
 							}
 							break;
-							case "quit_to_exitt":
-							{
+							case "quit_to_exit":
+							{	
+								playerData.get(myPointer).currentWorld = "EXIT";
 								Pack pack = new Pack();
-								PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnRequestWorldSelectMenu"), "default|LOL\nadd_button|Showing: `wWorlds``|_catselect_|0.6|3529161471|\nadd_floater|LOL|0|0.55|3529161471\n"));
 								Sender sender = new Sender();
+								for (Long playerPointer : playerData.keySet()) {
+									if(playerPointer != myPointer) {
+										ENetPeer playerX = new ENetPeer(playerPointer, true);
+										PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnRemove"), "netID|" + playerData.get(myPointer).netID));
+										sender.Send(playerX, spawnData.data);
+									}
+								}
+
+								PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnRequestWorldSelectMenu"), "default|LOL\nadd_button|Showing: `wWorlds``|_catselect_|0.6|3529161471|\nadd_floater|LOL|0|0.55|3529161471\n"));
 								sender.Send(peer, sendData.data);
 							}
 							break;
@@ -176,11 +185,13 @@ public class ServerEvent {
 					Movement move = new Movement();
 					MovementData movementData = move.unpackMovement(packetData);
 
+					playerData.get(myPointer).x = Math.round(movementData.x);
+					playerData.get(myPointer).y = Math.round(movementData.y);
+
 					for (Long playerPointer : playerData.keySet()) {
 						if(playerPointer != myPointer) {
-							System.out.println("Broadcast to: " + playerPointer);
 							ENetPeer playerX = new ENetPeer(playerPointer, true);
-							movementData.netID = playerData.get(playerPointer).netID;
+							movementData.netID = playerData.get(myPointer).netID;
 
 							byte[] d = move.packMovement(movementData);
 							Sender sender = new Sender();
@@ -200,9 +211,8 @@ public class ServerEvent {
 	}
 
 	public void OnDisconnect(ENetPeer peer) {
-		// byte[] connectByte = new byte[] {0x01, 0x00, 0x00, 0x00, 0x00};
-		// Sender sender = new Sender();
-		// sender.Send(peer, connectByte);
+		long myPointer = peer.getPointer();
+		playerData.remove(myPointer);
 	}
 
 	private PacketData SaveDatPacket() {
