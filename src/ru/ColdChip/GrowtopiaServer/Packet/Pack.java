@@ -41,6 +41,19 @@ public class Pack {
 		return p;
 	}
 
+	public PacketData AppendIntx(PacketData p, int val) {
+		byte[] data = new byte[p.data.length + 6];
+		int type = 5;
+		System.arraycopy(p.data, 0, data, 0, p.data.length);
+		data[p.data.length] = (byte)p.index;
+		data[p.data.length + 1] = (byte)type;
+		System.arraycopy(toBytes(val), 0, data, p.data.length + 2, 4);
+		p.data = data;
+		int i = p.index+=1;
+		p.index = i;
+		return p;
+	}
+
 	public PacketData PacketEnd(PacketData p) {
 		byte[] n = new byte[p.data.length + 1];
 		System.arraycopy(p.data, 0, n, 0, p.data.length);

@@ -49,7 +49,9 @@ public class ServerEvent {
 					String textData = unpack.unpackTextPacket(packet);
 					Vectorize vector = new Vectorize(textData);
 					if(vector.containsKey("tankIDName") && vector.containsKey("tankIDPass")) {
-						if(vector.get("tankIDName").equals("a") && vector.get("tankIDName").equals("a")) {
+						if(!vector.get("tankIDName").isEmpty() && !vector.get("tankIDName").isEmpty()) {
+							playerData.get(myPointer).username = vector.get("tankIDName");
+
 							Pack pack = new Pack();
 							PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`2Login Successful"));
 							Sender sender = new Sender();
@@ -100,6 +102,24 @@ public class ServerEvent {
 											PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnDialogRequest"), "set_default_color|`o\n\nadd_label_with_icon|big|`2Growtopia Server - Java Edition ``|left|1796|\n\nadd_spacer|small|\nadd_label_with_icon|small|`4SERVER`o:`2Growtopia Server - Java Edition`o was made by `9ColdChip`o and everyone that contributed on `9Github`o!|eft|5016|\nadd_label_with_icon|small| |left|6746|\nadd_label_with_icon|small|`4REMINDER`o: This server is under development and may be buggy please report issues on github.|left|1432|\nadd_label_with_icon|small|  |left|6746|\nadd_label_with_icon|small||\n\nadd_url_button|``GitHub: `1Here you can report any issues you have!``|`1Github Page|https://github.com/coldchip/growtopiaserver|Open link?|0|0|\nadd_url_button|||small|\nadd_textbox| |small||small|\nadd_textbox|~`2The Dev Team|small||small|\nadd_textbox|Version 0.001|small|\nadd_quick_exit|\nadd_button|chc0|Close|noflags|0|0|\nnend_dialog|gazette||OK|"));
 											Sender sender = new Sender();
 											sender.Send(peer, sendData.data);
+										}
+									}
+								break;
+								case "input":
+									{
+										String message = vector.get("text");
+										if(message != null && !message.isEmpty()) {
+											Pack pack = new Pack();
+											Sender sender = new Sender();
+											PacketData p = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`o<`w" + playerData.get(myPointer).username + "`o> " + message));
+											PacketData p2 = pack.PacketEnd(pack.AppendIntx(pack.AppendString(pack.AppendIntx(pack.AppendString(pack.CreatePacket(), "OnTalkBubble"), playerData.get(myPointer).netID), message), 0));
+											for (Long playerPointer : playerData.keySet()) {
+												if(playerData.get(playerPointer).currentWorld == "ABC") {
+													ENetPeer playerX = new ENetPeer(playerPointer, true);
+													sender.Send(playerX, p.data);
+													sender.Send(playerX, p2.data);
+												}
+											}
 										}
 									}
 								break;

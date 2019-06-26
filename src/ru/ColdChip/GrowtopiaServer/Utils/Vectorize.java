@@ -8,12 +8,17 @@ public class Vectorize {
 		Scanner scanner = new Scanner(data);
 		while (scanner.hasNextLine()) {
 			String line = scanner.nextLine();
-			String[] parts = line.split("\\|");
-			if(parts.length == 2) {
-				String key = parts[0];
-				String value = parts[1];
-				if(line.contains("|")) {
-					this.data.put(key, value);
+			if(line != null && !line.isEmpty()) {
+				if(line.substring(0, 1).matches("\\|")) {
+					line = line.substring(1);
+				}
+				String[] parts = line.split("\\|");
+				if(parts.length == 2) {
+					String key = parts[0];
+					String value = parts[1];
+					if(line.contains("|")) {
+						this.data.put(key, value);
+					}
 				}
 			}
 		}
