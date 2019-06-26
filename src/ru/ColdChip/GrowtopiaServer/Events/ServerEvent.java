@@ -11,6 +11,7 @@ import ru.ColdChip.GrowtopiaServer.World.*;
 import ru.ColdChip.GrowtopiaServer.Player.Structs.*;
 import ru.ColdChip.GrowtopiaServer.Player.Movement.*;
 import ru.ColdChip.GrowtopiaServer.Player.Movement.Structs.*;
+import ru.ColdChip.GrowtopiaServer.Structs.ServerHost;
 
 import java.util.*;
 import java.io.File;
@@ -21,18 +22,26 @@ public class ServerEvent {
 
 	private static HashMap<Long, PlayerData> playerData = new HashMap<Long, PlayerData>();
 
+	private static int cid = 0;
+
 	public void OnConnect(ENetPeer peer) {
 		byte[] connectByte = new byte[] {0x01, 0x00, 0x00, 0x00, 0x00};
 		Sender sender = new Sender();
 		sender.Send(peer, connectByte);
 
-		long connectionID = peer.getConnectID();
-		playerData.put(connectionID, new PlayerData());
+		PlayerData pData = new PlayerData();
+		pData.netID = cid;
+		playerData.put(peer.getPointer(), pData);
+		cid++;
 	}
 
-	public void OnReceive(ENetPeer peer, ENetPacket packet) {
+	public void OnReceive(ServerHost host) {
+		ENetPeer peer = host.peer;
+		ENetPacket packet = host.event.getPacket();
+		long myPointer = peer.getPointer();
+
 		Unpack unpack = new Unpack();
-		PlayerData player = playerData.get(peer.getConnectID());
+		PlayerData player = playerData.get(myPointer);
 		int type = unpack.getType(packet);
 		switch(type) {
 			case 2:
@@ -61,6 +70,7 @@ public class ServerEvent {
 										PacketData itemsDat = SaveDatPacket();
 										Sender sender = new Sender();
 										sender.Send(peer, itemsDat.data);
+										// new enet().enet_peer_disconnect_later(peer, 0);
 									}
 								break;
 								case "helpmenu":
@@ -123,8 +133,24 @@ public class ServerEvent {
 								sender.Send(peer, worldData.data);
 
 								Pack pack = new Pack();
-								PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|0\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + player.username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
-								sender.Send(peer, spawnData.data);
+								PacketData mySpawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(myPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + player.username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
+								sender.Send(peer, mySpawnData.data);
+
+								for (Long playerPointer : playerData.keySet()) {
+									if(playerPointer != myPointer) {
+										System.out.println(playerData.get(playerPointer).netID);
+										PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(playerPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + playerData.get(playerPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\n"));
+										sender.Send(peer, spawnData.data);
+									}
+								}
+
+								for (Long playerPointer : playerData.keySet()) {
+									if(playerPointer != myPointer) {
+										ENetPeer playerX = new ENetPeer(playerPointer, true);
+										PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(playerPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + playerData.get(playerPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\n"));
+										sender.Send(playerX, spawnData.data);
+									}
+								}
 							}
 							break;
 							case "quit_to_exitt":
@@ -149,6 +175,20 @@ public class ServerEvent {
 					byte[] packetData = unpack.unpackBinary(packet);
 					Movement move = new Movement();
 					MovementData movementData = move.unpackMovement(packetData);
+
+					for (Long playerPointer : playerData.keySet()) {
+						if(playerPointer != myPointer) {
+							System.out.println("Broadcast to: " + playerPointer);
+							ENetPeer playerX = new ENetPeer(playerPointer, true);
+							movementData.netID = playerData.get(playerPointer).netID;
+
+							byte[] d = move.packMovement(movementData);
+							Sender sender = new Sender();
+							PacketData p = new PacketData();
+							p.data = d;
+							sender.Send(playerX, p.data);
+						}
+					}
 				}
 			break;
 			default:

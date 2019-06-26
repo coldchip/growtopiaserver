@@ -12,7 +12,7 @@ public class ENetPeer {
   private transient long swigCPtr;
   protected transient boolean swigCMemOwn;
 
-  protected ENetPeer(long cPtr, boolean cMemoryOwn) {
+  public ENetPeer(long cPtr, boolean cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = cPtr;
   }
@@ -33,6 +33,10 @@ public class ENetPeer {
       }
       swigCPtr = 0;
     }
+  }
+
+  public long getPointer() {
+    return swigCPtr;
   }
 
   public void setDispatchList(ENetListNode value) {

@@ -47,7 +47,7 @@ public class Server {
 						serverEvent.OnConnect(host.peer);
 					}
 					if(type == ENetEventType.ENET_EVENT_TYPE_RECEIVE) {
-						serverEvent.OnReceive(host.peer, host.event.getPacket());
+						serverEvent.OnReceive(host);
 					}
 					if(type == ENetEventType.ENET_EVENT_TYPE_DISCONNECT) {
 						serverEvent.OnDisconnect(host.peer);
