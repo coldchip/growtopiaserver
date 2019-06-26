@@ -9,6 +9,8 @@ import ru.ColdChip.GrowtopiaServer.Packet.Structs.*;
 import ru.ColdChip.GrowtopiaServer.Utils.*;
 import ru.ColdChip.GrowtopiaServer.World.*;
 import ru.ColdChip.GrowtopiaServer.Player.Structs.*;
+import ru.ColdChip.GrowtopiaServer.Player.Movement.*;
+import ru.ColdChip.GrowtopiaServer.Player.Movement.Structs.*;
 
 import java.util.*;
 import java.io.File;
@@ -29,14 +31,13 @@ public class ServerEvent {
 	}
 
 	public void OnReceive(ENetPeer peer, ENetPacket packet) {
+		Unpack unpack = new Unpack();
 		PlayerData player = playerData.get(peer.getConnectID());
-		byte[] data = packet.getData();
-		int type = (int)data[0];
+		int type = unpack.getType(packet);
 		switch(type) {
 			case 2:
 				{	
-					Unpack unpack = new Unpack();
-					String textData = unpack.UnpackTextPacket(data);
+					String textData = unpack.unpackTextPacket(packet);
 					Vectorize vector = new Vectorize(textData);
 					if(vector.containsKey("tankIDName") && vector.containsKey("tankIDPass")) {
 						if(vector.get("tankIDName").equals("a") && vector.get("tankIDName").equals("a")) {
@@ -109,8 +110,7 @@ public class ServerEvent {
 			break;
 			case 3:
 				{
-					Unpack unpack = new Unpack();
-					String textData = unpack.UnpackTextPacket(data);
+					String textData = unpack.unpackTextPacket(packet);
 					Vectorize vector = new Vectorize(textData);
 					if(vector.containsKey("action")) {
 						String action = vector.get("action");
@@ -146,7 +146,9 @@ public class ServerEvent {
 			break;
 			case 4:
 				{
-					System.out.println("event 4");
+					byte[] packetData = unpack.unpackBinary(packet);
+					Movement move = new Movement();
+					MovementData movementData = move.unpackMovement(packetData);
 				}
 			break;
 			default:
