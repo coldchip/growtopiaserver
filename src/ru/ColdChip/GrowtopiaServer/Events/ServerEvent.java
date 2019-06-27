@@ -84,6 +84,77 @@ public class ServerEvent {
 										sender.Send(peer, sendData.data);
 									}
 								break;
+								case "dialog_return":
+									{
+										// This will be needed for registration/growid.
+										Pack pack = new Pack();
+										PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "Warning Dialog Return isnt ready."));
+										Sender sender = new Sender();
+										sender.Send(peer, sendData.data);
+									}
+								break;
+								case "friends":
+									{
+										// The friends button.
+										Pack pack = new Pack();
+										PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnDialogRequest"), "set_default_color|`o\n\nadd_label_with_icon|big|`wSocial Portal``|left|interface/large/friend_button.rttex|0|0|\nadd_spacer|small|\nadd_button|chc0|Show Friends|noflags|0|0|\nadd_button|chc0|Create Guild|noflags|0|0|\nadd_spacer|small||30|\nadd_button|chc0|OK|noflags|0|0|\nnend_dialog|gazette||`yOK|"));
+										Sender sender = new Sender();
+										sender.Send(peer, sendData.data);
+									}
+								break;
+								case "eventmenu":
+									{
+										// The button above friends
+										Pack pack = new Pack();
+										PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnDialogRequest"), "set_default_color|`o\n\nadd_label_with_icon|big|`7Summer Clash Event Has Ended!|left|836|\nadd_textbox|Summer Clash has ended, but worry not - a new Season Clash is comming soon!|\nadd_spacer|small|\nadd_button|chc0|Close|noflags|0|0|\nnend_dialog|gazette||`yOK|"));
+										Sender sender = new Sender();
+										sender.Send(peer, sendData.data);
+									}
+								break;
+								case "store":
+									{
+										//The store button.
+										Pack pack = new Pack();
+										PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnStoreRequest"), "set_description_text|Welcome to the `2Growtopia Store``!  Tap the item you'd like more info on.`o  `wWant to get `5Supporter`` status? Any Gem purchase (or `57,000`` Gems earned with free `5Tapjoy`` offers) will make you one. You'll get new skin colors, the `5Recycle`` tool to convert unwanted items into Gems, and more bonuses!\nadd_button|iap_menu|Buy Gems|interface/large/store_buttons5.rttex||0|2|0|0||\nadd_button|subs_menu|Subscriptions|interface/large/store_buttons22.rttex||0|1|0|0||\nadd_button|token_menu|Growtoken Items|interface/large/store_buttons9.rttex||0|0|0|0||\nadd_button|pristine_forceps|`oAnomalizing Pristine Bonesaw``|interface/large/store_buttons20.rttex|Built to exacting specifications by GrowTech engineers to find and remove temporal anomalies from infected patients, and with even more power than Delicate versions! Note : The fragile anomaly - seeking circuitry in these devices is prone to failure and may break (though with less of a chance than a Delicate version)! Use with care!|0|3|3500|0||\nadd_button|itemomonth|`oItem Of The Month``|interface/large/store_buttons16.rttex|`2September 2018:`` `9Sorcerer's Tunic of Mystery!`` Capable of reflecting the true colors of the world around it, this rare tunic is made of captured starlight and aether. If you think knitting with thread is hard, just try doing it with moonbeams and magic! The result is worth it though, as these clothes won't just make you look amazing - you'll be able to channel their inherent power into blasts of cosmic energy!``|0|3|200000|0||\nadd_button|contact_lenses|`oContact Lens Pack``|interface/large/store_buttons22.rttex|Need a colorful new look? This pack includes 10 random Contact Lens colors (and may include Contact Lens Cleaning Solution, to return to your natural eye color)!|0|7|15000|0||\nadd_button|locks_menu|Locks And Stuff|interface/large/store_buttons3.rttex||0|4|0|0||\nadd_button|itempack_menu|Item Packs|interface/large/store_buttons3.rttex||0|3|0|0||\nadd_button|bigitems_menu|Awesome Items|interface/large/store_buttons4.rttex||0|6|0|0||\nadd_button|weather_menu|Weather Machines|interface/large/store_buttons5.rttex|Tired of the same sunny sky?  We offer alternatives within...|0|4|0|0||\n"));
+										Sender sender = new Sender();
+										sender.Send(peer, sendData.data);
+									}
+								break;
+								case "killstore":
+									{
+										//when the store closes
+										Pack pack = new Pack();
+										PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "Thanks for visiting the store!"));
+										Sender sender = new Sender();
+										sender.Send(peer, sendData.data);
+									}
+								break;
+									case "drop":
+									{
+										//when the user clicks drop
+										Pack pack = new Pack();
+										PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "Dropping isnt implemented yet."));
+										Sender sender = new Sender();
+										sender.Send(peer, sendData.data);
+									}
+								break;
+								case "growid":
+									{
+										{
+										//When you create your account
+										Pack pack = new Pack();
+										PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "Registration is not supported yet!"));
+										Sender sender = new Sender();
+										sender.Send(peer, sendData.data);
+										}
+										{
+										Pack pack = new Pack();
+										PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnDialogRequest"), "set_default_color|`o\n\nadd_label_with_icon|big|`wAccount Creation Menu!``|left|32|\n\nadd_spacer|small|\nadd_text_input|username|GrowID: ||15|\nadd_text_input|password|Password: ||100|\nend_dialog|register|Cancel|OK|"));
+										Sender sender = new Sender();
+										sender.Send(peer, sendData.data);
+										}
+									}
+								break;
 								case "enter_game":
 									{
 										{
