@@ -19,7 +19,13 @@ import ru.ColdChip.GrowtopiaServer.Structs.ServerHost;
 import ru.ColdChip.GrowtopiaServer.Events.ServerEvent;
 import ru.ColdChip.GrowtopiaServer.GUI.MainView;
 
+import ru.ColdChip.HTTPServlet.HTTPServer;
+import ru.ColdChip.HTTPServlet.Route;
+import ru.ColdChip.HTTPServlet.Request;
+import ru.ColdChip.HTTPServlet.Response;
+
 import java.nio.file.Paths;
+import java.io.IOException;
 import java.awt.GraphicsEnvironment;
 
 public class Server { 
@@ -34,6 +40,14 @@ public class Server {
 			System.out.println("GUI");
 			MainView mainView = new MainView();
 		}
+		HTTPServer s = new HTTPServer(9010);
+		s.Req("/.*", new Route() {
+			@Override
+			public void handle(Request request, Response response) throws IOException {
+				response.WriteText("{\"status\":\"NOT_LOGGED_IN\", \"service\":\"ColdChip Drive\"}");
+			}
+		});
+		s.run();
 		try {
     		System.load(Paths.get("").toAbsolutePath().toString() + "/Lib/libenet.so");
     		enet en = new enet();

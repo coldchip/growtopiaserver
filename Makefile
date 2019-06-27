@@ -23,7 +23,7 @@ module:
 	$(JNI_COMPILER) -shared ENetJNIToolChain/enet/*.lo ENetJNIToolChain/enet_wrap.o -o Lib/libenet.so
 	rm -r ENetJNIToolChain/enet/*.lo
 	$(JAVA_COMPILER) -sourcepath src src/ru/ColdChip/GrowtopiaServer/Server.java
-	cd src && $(JAR_ARCHIVER) -cvfe ../Build/server.jar ru.ColdChip.GrowtopiaServer.Server ru/ColdChip/GrowtopiaServer/*
+	cd src && $(JAR_ARCHIVER) -cvfe ../Build/server.jar ru.ColdChip.GrowtopiaServer.Server ru/ColdChip/*
 	
 run:
 	java -jar Build/server.jar
