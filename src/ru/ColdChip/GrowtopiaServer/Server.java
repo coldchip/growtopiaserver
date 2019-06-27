@@ -17,13 +17,23 @@ import ru.ColdChip.GrowtopiaServer.ENetJava.ENetBuffer;
 
 import ru.ColdChip.GrowtopiaServer.Structs.ServerHost;
 import ru.ColdChip.GrowtopiaServer.Events.ServerEvent;
+import ru.ColdChip.GrowtopiaServer.GUI.MainView;
 
 import java.nio.file.Paths;
+import java.awt.GraphicsEnvironment;
 
 public class Server { 
 
 	public static void main(String[] args) {
 		System.out.println("\r\n\r\n\r\n\r\n\033[32m[Thread] \033[30m\033[42mGrowtopia Server Started\033[0m\r\n\r\n");
+		if (GraphicsEnvironment.isHeadless()) {
+			// non gui mode
+			System.out.println("NON-GUI");
+		} else {
+			// gui mode
+			System.out.println("GUI");
+			MainView mainView = new MainView();
+		}
 		try {
     		System.load(Paths.get("").toAbsolutePath().toString() + "/Lib/libenet.so");
     		enet en = new enet();

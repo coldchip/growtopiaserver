@@ -314,6 +314,15 @@ public class ServerEvent {
 
 	public void OnDisconnect(ENetPeer peer) {
 		long myPointer = peer.getPointer();
+		Pack pack = new Pack();
+		Sender sender = new Sender();
+		for (Long playerPointer : playerData.keySet()) {
+			if(playerPointer != myPointer) {
+				ENetPeer playerX = new ENetPeer(playerPointer, true);
+				PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnRemove"), "netID|" + playerData.get(myPointer).netID));
+				sender.Send(playerX, spawnData.data);
+			}
+		}
 		playerData.remove(myPointer);
 	}
 
