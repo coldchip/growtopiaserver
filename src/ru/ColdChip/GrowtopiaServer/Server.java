@@ -40,19 +40,23 @@ public class Server {
     		ServerEvent serverEvent = new ServerEvent();
 
     		while(true) {
-				if(en.Service(host.host, host.event, 10) > 0) {
-					ENetEventType type = host.event.getType();
-					host.peer = host.event.getPeer();
-					if(type == ENetEventType.ENET_EVENT_TYPE_CONNECT) {
-						serverEvent.OnConnect(host.peer);
+    			try {
+					if(en.Service(host.host, host.event, 10) > 0) {
+						ENetEventType type = host.event.getType();
+						host.peer = host.event.getPeer();
+						if(type == ENetEventType.ENET_EVENT_TYPE_CONNECT) {
+							serverEvent.OnConnect(host.peer);
+						}
+						if(type == ENetEventType.ENET_EVENT_TYPE_RECEIVE) {
+							serverEvent.OnReceive(host);
+						}
+						if(type == ENetEventType.ENET_EVENT_TYPE_DISCONNECT) {
+							serverEvent.OnDisconnect(host.peer);
+						}
 					}
-					if(type == ENetEventType.ENET_EVENT_TYPE_RECEIVE) {
-						serverEvent.OnReceive(host);
-					}
-					if(type == ENetEventType.ENET_EVENT_TYPE_DISCONNECT) {
-						serverEvent.OnDisconnect(host.peer);
-					}
-				}
+				} catch(Exception e) {
+			    	System.err.println(e.toString());
+			    }
     		}
 	    } catch (UnsatisfiedLinkError e) {
 			System.err.println("Native code library failed to load.\n" + e);

@@ -13,6 +13,8 @@ import ru.ColdChip.GrowtopiaServer.Player.Movement.*;
 import ru.ColdChip.GrowtopiaServer.Player.Movement.Structs.*;
 import ru.ColdChip.GrowtopiaServer.Structs.ServerHost;
 import ru.ColdChip.GrowtopiaServer.Player.Inventory.Inventory;
+import ru.ColdChip.GrowtopiaServer.Player.Command.PlayerInput;
+import ru.ColdChip.GrowtopiaServer.Player.PlayerList;
 
 import java.util.*;
 import java.io.File;
@@ -21,7 +23,7 @@ import java.nio.file.Paths;
 
 public class ServerEvent {
 
-	private static HashMap<Long, PlayerData> playerData = new HashMap<Long, PlayerData>();
+	private PlayerList playerData = new PlayerList();
 
 	private static int cid = 0;
 
@@ -36,7 +38,7 @@ public class ServerEvent {
 		cid += 1;
 	}
 
-	public void OnReceive(ServerHost host) {
+	public void OnReceive(ServerHost host) throws Exception {
 		ENetPeer peer = host.peer;
 		ENetPacket packet = host.event.getPacket();
 		long myPointer = peer.getPointer();
@@ -51,7 +53,10 @@ public class ServerEvent {
 					Vectorize vector = new Vectorize(textData);
 					if(vector.containsKey("tankIDName") && vector.containsKey("tankIDPass")) {
 						if(!vector.get("tankIDName").isEmpty() && !vector.get("tankIDName").isEmpty()) {
-							playerData.get(myPointer).username = vector.get("tankIDName");
+
+							PlayerData update = playerData.get(myPointer);
+							update.username = vector.get("tankIDName");
+							playerData.put(myPointer, update);
 
 							Pack pack = new Pack();
 							PacketData sendData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`2Login Successful"));
@@ -180,18 +185,10 @@ public class ServerEvent {
 								case "input":
 									{
 										String message = vector.get("text");
+										PlayerInput playerInput = new PlayerInput(peer);
+										playerInput.processCommand(message);
 										if(message != null && !message.isEmpty()) {
-											Pack pack = new Pack();
-											Sender sender = new Sender();
-											PacketData p = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnConsoleMessage"), "`o<`w" + playerData.get(myPointer).username + "`o> " + message));
-											PacketData p2 = pack.PacketEnd(pack.AppendIntx(pack.AppendString(pack.AppendIntx(pack.AppendString(pack.CreatePacket(), "OnTalkBubble"), playerData.get(myPointer).netID), message), 0));
-											for (Long playerPointer : playerData.keySet()) {
-												if(playerData.get(playerPointer).currentWorld == "ABC") {
-													ENetPeer playerX = new ENetPeer(playerPointer, true);
-													sender.Send(playerX, p.data);
-													sender.Send(playerX, p2.data);
-												}
-											}
+											
 										}
 									}
 								break;
@@ -219,13 +216,11 @@ public class ServerEvent {
 						switch(action) {
 							case "join_request":
 							{
-								playerData.get(myPointer).currentWorld = "ABC";
+								PlayerData update = playerData.get(myPointer);
+								update.currentWorld = "ABC";
+								playerData.put(myPointer, update);
 
 								Sender sender = new Sender();
-
-								Inventory inv = new Inventory();
-								PacketData invData = inv.getInventory();
-								sender.Send(peer, invData.data);
 
 								GetWorldData worldUtils = new GetWorldData();
 								PacketData worldData = worldUtils.GetWorld("lol");
@@ -235,6 +230,9 @@ public class ServerEvent {
 								PacketData mySpawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(myPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|938|0\nname|``" + playerData.get(myPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\ntype|local\n"));
 								sender.Send(peer, mySpawnData.data);
 
+								Inventory inv = new Inventory();
+								PacketData invData = inv.getInventory();
+								sender.Send(peer, invData.data);
 
 								for (Long playerPointer : playerData.keySet()) {
 									if(playerPointer != myPointer && playerData.get(playerPointer).currentWorld == "ABC") {
@@ -253,7 +251,11 @@ public class ServerEvent {
 							break;
 							case "quit_to_exit":
 							{	
-								playerData.get(myPointer).currentWorld = "EXIT";
+
+								PlayerData update = playerData.get(myPointer);
+								update.currentWorld = "EXIT";
+								playerData.put(myPointer, update);
+
 								Pack pack = new Pack();
 								Sender sender = new Sender();
 								for (Long playerPointer : playerData.keySet()) {
@@ -283,8 +285,10 @@ public class ServerEvent {
 					Movement move = new Movement();
 					MovementData movementData = move.unpackMovement(packetData);
 
-					playerData.get(myPointer).x = Math.round(movementData.x);
-					playerData.get(myPointer).y = Math.round(movementData.y);
+					PlayerData update = playerData.get(myPointer);
+					update.x = Math.round(movementData.x);
+					update.y = Math.round(movementData.y);
+					playerData.put(myPointer, update);
 
 					for (Long playerPointer : playerData.keySet()) {
 						if(playerPointer != myPointer) {
