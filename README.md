@@ -24,6 +24,9 @@ To run `$ make run`
 
 or `$ java -jar Build/server.jar`
 
+Control Panel
+------------
+
 Requirements
 ------------
 
