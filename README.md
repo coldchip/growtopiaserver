@@ -27,6 +27,8 @@ or `$ java -jar Build/server.jar`
 Control Panel
 ------------
 
+Use a browser and go to `http://localhost:9010`
+
 Requirements
 ------------
 
