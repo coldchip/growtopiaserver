@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Growtopia Server Admin Panel</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<style type="text/css">
+		html, body {
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 100%;
+		}
+		.header {
+			display: inline-block;
+			visibility: visible;
+			opacity: 1;
+			transition: opacity 2s linear;
+			width: 100%;
+			height: 60px;
+			background: #0c84e4;
+			margin-bottom: 10px;
+			box-shadow: 0 5px 10px #aaa;
+		}
+		.text {
+			color: #333;
+			margin-top: 0;
+			margin-bottom: 0;
+			font-family: 'Raleway', sans-serif;
+		}
+		.status {
+			text-align: center;
+			margin: 35px 0px;
+			font-size: 2em !important;
+			font-weight: 500 !important;
+		}
+		.dotStatus {
+			margin: 0px 0px 0px 10px;
+			width: 20px;
+		}
+		.onoff {
+			display: block;
+			font-weight: 500;
+			width: 180px;
+			height: 38px;
+			margin: 5px auto;
+			color: #fff;
+			border: none;
+			background-color: #27248a;
+			font-size:15px;
+			border-radius: 3px;
+			box-sizing:border-box;
+		}
+		.headerText {
+			color: white !important;
+			font-size: 1.5em !important;
+			margin: 13.5px 0px 0px 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function() {
+			getStatus();
+		}
+		function getStatus() {
+			send("GET", "/api/v1/status", "", function(data) {
+				var status = JSON.parse(data);
+				if(status["status"] == 0) {
+					$("status").innerHTML = "Server Status: Online<img class='dotStatus' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/large-green-circle_1f7e2.png'>";
+				} else {
+					$("status").innerHTML = "Server Status: Offline<img class='dotStatus' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/large-red-circle_1f534.png'>";
+				}
+			});
+			setTimeout(getStatus, 1000);
+		}
+		function onoffServer() {
+			send("GET", "/api/v1/serverOnOff", "", function(data) {
+				getStatus();
+			});
+		}
+		function send(method, path, data, callback) {
+		    var http = new XMLHttpRequest();
+		    http.open(method, path, true);
+		    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		    http.send(data);
+		    http.onreadystatechange = function()
+		    {
+		        if(this.readyState == 4 && this.status == 200)
+		        {
+		            callback(http.responseText);
+		        }
+		    };	
+		}
+		function $(id) {
+			return document.getElementById(id);
+		}
+	</script>
+</head>
+<body>
+	<div class="header" id="header" style="background: rgb(85, 75, 91);">
+		<p class="text headerText">Growtopia Server Admin</p>
+	</div>
+	<p class="text status" id="status">Server Status: </p>
+	<button class="onoff text" onclick="onoffServer()">Turn on/off</button>
+</body>
+</html>

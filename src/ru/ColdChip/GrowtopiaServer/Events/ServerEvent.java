@@ -242,7 +242,7 @@ public class ServerEvent {
 								}
 								for (Long playerPointer : playerData.keySet()) {
 									if(playerPointer != myPointer && playerData.get(playerPointer).currentWorld == "ABC") {
-										ENetPeer playerX = new ENetPeer(playerPointer, true);
+										ENetPeer playerX = new ENetPeer(playerPointer, false);
 										PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnSpawn"), "spawn|avatar\nnetID|" + playerData.get(myPointer).netID + "\nuserID|2388\ncolrect|0|0|20|30\nposXY|" + playerData.get(myPointer).x + "|" + playerData.get(myPointer).y + "\nname|``" + playerData.get(myPointer).username + "``\ncountry|ru\ninvis|0\nmstate|0\nsmstate|0\n"));
 										sender.Send(playerX, spawnData.data);
 									}
@@ -260,7 +260,7 @@ public class ServerEvent {
 								Sender sender = new Sender();
 								for (Long playerPointer : playerData.keySet()) {
 									if(playerPointer != myPointer) {
-										ENetPeer playerX = new ENetPeer(playerPointer, true);
+										ENetPeer playerX = new ENetPeer(playerPointer, false);
 										PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnRemove"), "netID|" + playerData.get(myPointer).netID));
 										sender.Send(playerX, spawnData.data);
 									}
@@ -292,7 +292,7 @@ public class ServerEvent {
 
 					for (Long playerPointer : playerData.keySet()) {
 						if(playerPointer != myPointer) {
-							ENetPeer playerX = new ENetPeer(playerPointer, true);
+							ENetPeer playerX = new ENetPeer(playerPointer, false);
 							movementData.netID = playerData.get(myPointer).netID;
 
 							byte[] d = move.packMovement(movementData);
@@ -318,7 +318,7 @@ public class ServerEvent {
 		Sender sender = new Sender();
 		for (Long playerPointer : playerData.keySet()) {
 			if(playerPointer != myPointer) {
-				ENetPeer playerX = new ENetPeer(playerPointer, true);
+				ENetPeer playerX = new ENetPeer(playerPointer, false);
 				PacketData spawnData = pack.PacketEnd(pack.AppendString(pack.AppendString(pack.CreatePacket(), "OnRemove"), "netID|" + playerData.get(myPointer).netID));
 				sender.Send(playerX, spawnData.data);
 			}

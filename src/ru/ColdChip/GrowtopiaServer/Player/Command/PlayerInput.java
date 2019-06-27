@@ -37,7 +37,7 @@ public class PlayerInput {
 									Sender sender = new Sender();
 									for (Long playerPointer : playerData.keySet()) {
 										if(playerData.get(playerPointer).currentWorld == "ABC") {
-											ENetPeer playerX = new ENetPeer(playerPointer, true);
+											ENetPeer playerX = new ENetPeer(playerPointer, false);
 											sender.Send(playerX, p.data);
 										}
 									}
@@ -69,7 +69,7 @@ public class PlayerInput {
 					PacketData p2 = pack.PacketEnd(pack.AppendIntx(pack.AppendString(pack.AppendIntx(pack.AppendString(pack.CreatePacket(), "OnTalkBubble"), playerData.get(myPointer).netID), message), 0));
 					for (Long playerPointer : playerData.keySet()) {
 						if(playerData.get(playerPointer).currentWorld == "ABC") {
-							ENetPeer playerX = new ENetPeer(playerPointer, true);
+							ENetPeer playerX = new ENetPeer(playerPointer, false);
 							sender.Send(playerX, p.data);
 							sender.Send(playerX, p2.data);
 						}

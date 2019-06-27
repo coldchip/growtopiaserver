@@ -3875,7 +3875,6 @@ SWIGEXPORT void JNICALL Java_ru_ColdChip_GrowtopiaServer_ENetJava_enetJNI_ENetPa
 
 
 SWIGEXPORT jbyteArray JNICALL Java_ru_ColdChip_GrowtopiaServer_ENetJava_enetJNI_ENetPacket_1data_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
   struct _ENetPacket *arg1 = (struct _ENetPacket *) 0 ;
   enet_uint8 *result = 0 ;
   
@@ -3883,8 +3882,6 @@ SWIGEXPORT jbyteArray JNICALL Java_ru_ColdChip_GrowtopiaServer_ENetJava_enetJNI_
   (void)jcls;
   (void)jarg1_;
   arg1 = *(struct _ENetPacket **)&jarg1; 
-  result = (enet_uint8 *) ((arg1)->data);
-  *(enet_uint8 **)&jresult = result;
   jbyteArray array = (*jenv)->NewByteArray (jenv, (arg1)->dataLength); 
   (*jenv)->SetByteArrayRegion (jenv, array, 0, (arg1)->dataLength, ((arg1)->data));
   // FIX MEMORY LEAK

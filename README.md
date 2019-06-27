@@ -1,6 +1,8 @@
 ColdChip - Growtopia Server Java Edition
 ===========================
 
+[![ColdChip - Growtopia Server Java Edition](https://raw.githubusercontent.com/coldchip/growtopiaserver/master/Screenshots/sc1.png)](https://github.com/nlohmann/json/releases)
+
 This is an advanced Growtopia Server made in Java
 
 Some functions may be copied from [https://github.com/GrowtopiaNoobs/GrowtopiaServer](https://github.com/GrowtopiaNoobs/GrowtopiaServer)
