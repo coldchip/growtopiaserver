@@ -25,6 +25,8 @@ public class ServerEvent {
 
 	public static PlayerList playerData = new PlayerList();
 
+	public PutWorldData putWorldData = new PutWorldData();
+
 	private static int cid = 0;
 
 	public void OnConnect(ENetPeer peer) {
@@ -285,21 +287,62 @@ public class ServerEvent {
 					Movement move = new Movement();
 					MovementData movementData = move.unpackMovement(packetData);
 
-					PlayerData update = playerData.get(myPointer);
-					update.x = Math.round(movementData.x);
-					update.y = Math.round(movementData.y);
-					playerData.put(myPointer, update);
+					if(movementData.punchX == -1 && movementData.punchY == -1) {
+						PlayerData update = playerData.get(myPointer);
+						update.x = Math.round(movementData.x);
+						update.y = Math.round(movementData.y);
+						playerData.put(myPointer, update);
 
-					for (Long playerPointer : playerData.keySet()) {
-						if(playerPointer != myPointer) {
-							ENetPeer playerX = new ENetPeer(playerPointer, false);
-							movementData.netID = playerData.get(myPointer).netID;
+						for (Long playerPointer : playerData.keySet()) {
+							if(playerPointer != myPointer) {
+								ENetPeer playerX = new ENetPeer(playerPointer, false);
+								movementData.netID = playerData.get(myPointer).netID;
 
-							byte[] d = move.packMovement(movementData);
-							Sender sender = new Sender();
-							PacketData p = new PacketData();
-							p.data = d;
-							sender.Send(playerX, p.data);
+								byte[] d = move.packMovement(movementData);
+								Sender sender = new Sender();
+								PacketData p = new PacketData();
+								p.data = d;
+								sender.Send(playerX, p.data);
+							}
+						}
+					} else {
+						if(movementData.packetType == 3) {
+							boolean success = putWorldData.updateTile("test", movementData.plantingTree, movementData.punchX, movementData.punchY);
+							if(success == true) {
+								for (Long playerPointer : playerData.keySet()) {
+									ENetPeer playerX = new ENetPeer(playerPointer, false);
+									movementData.netID = playerData.get(myPointer).netID;
+
+									byte[] d = move.packMovement(movementData);
+									Sender sender = new Sender();
+									PacketData p = new PacketData();
+									p.data = d;
+									sender.Send(playerX, p.data);
+
+								}
+							} else {
+								for (Long playerPointer : playerData.keySet()) {
+									ENetPeer playerX = new ENetPeer(playerPointer, false);
+									
+									MovementData nothingHappened = new MovementData();
+
+									//nothingHappened.netID = playerData.get(myPointer).netID;
+									nothingHappened.packetType = 8;
+									nothingHappened.plantingTree = 0;
+									nothingHappened.netID = -1;
+									nothingHappened.x = Math.round(movementData.x);
+									nothingHappened.y = Math.round(movementData.y);
+									nothingHappened.punchX = Math.round(movementData.x);
+									nothingHappened.punchY = Math.round(movementData.y);
+
+									byte[] d = move.packMovement(nothingHappened);
+									Sender sender = new Sender();
+									PacketData p = new PacketData();
+									p.data = d;
+									sender.Send(playerX, p.data);
+
+								}
+							}
 						}
 					}
 				}
