@@ -3,6 +3,7 @@
 <head>
 	<title>Growtopia Server Admin Panel</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
 	<style type="text/css">
 		html, body {
 			padding: 0px;
@@ -37,7 +38,20 @@
 			margin: 0px 0px 0px 10px;
 			width: 20px;
 		}
-		.onoff {
+		.buttonOnOff {
+			display: block;
+			font-weight: 500;
+			width: 180px;
+			height: 38px;
+			margin: 5px auto;
+			color: #fff;
+			border: none;
+			background-color: #da4747;
+			font-size:15px;
+			border-radius: 3px;
+			box-sizing:border-box;
+		}
+		.buttonRestart {
 			display: block;
 			font-weight: 500;
 			width: 180px;
@@ -65,14 +79,21 @@
 				var status = JSON.parse(data);
 				if(status["status"] == 0) {
 					$("status").innerHTML = "Server Status: Online<img class='dotStatus' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/large-green-circle_1f7e2.png'>";
-				} else {
+				} else if(status["status"] == 1) {
 					$("status").innerHTML = "Server Status: Offline<img class='dotStatus' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/large-red-circle_1f534.png'>";
+				} else if(status["status"] == 2) {
+					$("status").innerHTML = "Server Status: Restarting in " + ((status["time"] + 60) - Math.floor(Date.now() / 1000)) + " Sec<img class='dotStatus' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/large-yellow-circle_1f7e1.png'>";
 				}
 			});
 			setTimeout(getStatus, 1000);
 		}
 		function onoffServer() {
 			send("GET", "/api/v1/serverOnOff", "", function(data) {
+				getStatus();
+			});
+		}
+		function restartServer() {
+			send("GET", "/api/v1/serverRestart", "", function(data) {
 				getStatus();
 			});
 		}
@@ -99,6 +120,7 @@
 		<p class="text headerText">Growtopia Server Admin</p>
 	</div>
 	<p class="text status" id="status">Server Status: </p>
-	<button class="onoff text" onclick="onoffServer()">Turn on/off</button>
+	<button class="buttonOnOff text" onclick="onoffServer()">Turn on/off</button>
+	<button class="buttonRestart text" onclick="restartServer()">Restart Server</button>
 </body>
 </html>

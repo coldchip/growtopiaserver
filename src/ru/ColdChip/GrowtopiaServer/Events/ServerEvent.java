@@ -23,7 +23,7 @@ import java.nio.file.Paths;
 
 public class ServerEvent {
 
-	private PlayerList playerData = new PlayerList();
+	public static PlayerList playerData = new PlayerList();
 
 	private static int cid = 0;
 
