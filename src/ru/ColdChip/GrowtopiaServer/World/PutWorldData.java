@@ -11,7 +11,6 @@ import java.nio.file.Paths;
 public class PutWorldData {
 	public boolean updateTile(String name, int tile, int x, int y) throws IOException {
 			try {
-				System.out.println("OK");
 				File file = new File(Paths.get("").toAbsolutePath().toString() + "/Lib/CoreData.txt");
 				FileReader fileReader = new FileReader(file);
 				BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -33,25 +32,36 @@ public class PutWorldData {
 						}
 						if(type.equals("Fist") && tile == 18) {
 
-							int index = ((100 * y) + x) * 8;
+							try {
 
-							RandomAccessFile f = new RandomAccessFile("Database/Worlds/" + name, "rw");
+								GetWorldData worldData = new GetWorldData();
 
-							f.seek(index);
+								if(worldData.getBlockAt(x, y) == 8 || worldData.getBackgroundAt(x, y) == 6) {
+									return false;
+								} else {
+									int index = ((100 * y) + x) * 8;
 
-							f.write(Short2Byte((short)0), 0, 2);
+									RandomAccessFile f = new RandomAccessFile("Database/Worlds/" + name, "rw");
 
-							return true;
+									f.seek(index);
+
+									f.write(Short2Byte((short)0), 0, 2);
+
+									return true;
+								}
+							} catch(IOException e) {
+								return false;
+							}
 						}
 					} catch(Exception e) {
-
+						return false;
 					}
 				}
 				fileReader.close();
 			} catch (IOException e) {
-
+				return false;
 			} catch(Exception e) {
-
+				return false;
 			} 
 			return false;
 			
